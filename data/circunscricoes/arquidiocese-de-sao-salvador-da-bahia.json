@@ -1,0 +1,48 @@
+{
+  "id": "arquidiocese-de-sao-salvador-da-bahia",
+  "nome": {
+    "valor": "Arquidiocese de São Salvador da Bahia",
+    "fonte": "wikipedia_pt",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Circunscri%C3%A7%C3%B5es_eclesi%C3%A1sticas_cat%C3%B3licas_do_Brasil",
+    "verificado_em": "2026-08-18",
+    "confianca": "media"
+  },
+  "tipo": "arquidiocese",
+  "tipo_jurisdicao": "territorial",
+  "granularidade_territorial": null,
+  "regional_cnbb": null,
+  "provincia_eclesiastica": {
+    "id": "provincia-de-sao-salvador-da-bahia",
+    "papel": "metropolitana"
+  },
+  "ereta_em": {
+    "valor": "1551-02-25",
+    "fonte": "Bula Super specula militantis ecclesiae, Júlio III",
+    "fonte_url": null,
+    "verificado_em": "2026-08-18",
+    "confianca": "media"
+  },
+  "bispo_atual": {
+    "nome": null,
+    "oficio": "arcebispo",
+    "valido_de": null,
+    "fonte": null,
+    "fonte_url": null,
+    "verificado_em": null,
+    "confianca": "nao_verificado"
+  },
+  "territorio": {
+    "tipo": "municipios_ibge",
+    "municipios_ibge": [],
+    "fonte": null,
+    "fonte_url": null,
+    "verificado_em": null,
+    "confianca": "nao_verificado"
+  },
+  "crosswalk": {
+    "wikidata_qid": null,
+    "gcatholic_id": null,
+    "catholic_hierarchy_id": null,
+    "cdic_id": null
+  }
+}

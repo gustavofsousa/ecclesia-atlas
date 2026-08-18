@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gustavofsousa/ecclesia-atlas/blob/main/schema/circunscricao.schema.json",
+  "title": "Circunscrição Eclesiástica",
+  "type": "object",
+  "required": ["id", "nome", "tipo", "tipo_jurisdicao", "crosswalk"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable slug. Must not be silently re-derived when the current name changes."
+    },
+    "nome": { "$ref": "#/$defs/provenanced_string" },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "arquidiocese",
+        "diocese",
+        "prelazia_territorial",
+        "eparquia",
+        "arquieparquia",
+        "exarcado",
+        "ordinariado_militar",
+        "ordinariado_oriental",
+        "administracao_apostolica_pessoal"
+      ]
+    },
+    "tipo_jurisdicao": {
+      "type": "string",
+      "enum": ["territorial", "pessoal"],
+      "description": "Personal Apostolic Administrations and Military Ordinariates are 'pessoal' — territorio must then be { tipo: sem_territorio }."
+    },
+    "granularidade_territorial": {
+      "type": ["string", "null"],
+      "enum": ["municipio", "submunicipal", "indefinido", null]
+    },
+    "regional_cnbb": {
+      "type": ["string", "null"],
+      "description": "Administrative CNBB regional (1 of 19). NOT the same as provincia_eclesiastica — do not conflate."
+    },
+    "provincia_eclesiastica": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["id", "papel"],
+      "properties": {
+        "id": { "type": "string" },
+        "papel": { "type": "string", "enum": ["metropolitana", "sufraganea"] }
+      }
+    },
+    "ereta_em": { "$ref": "#/$defs/provenanced_value" },
+    "bispo_atual": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["oficio", "confianca"],
+      "properties": {
+        "nome": { "type": ["string", "null"] },
+        "oficio": { "type": "string" },
+        "valido_de": { "type": ["string", "null"], "format": "date" },
+        "fonte": { "type": ["string", "null"] },
+        "fonte_url": { "type": ["string", "null"] },
+        "verificado_em": { "type": ["string", "null"], "format": "date" },
+        "confianca": { "$ref": "#/$defs/confianca" }
+      }
+    },
+    "territorio": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["tipo", "confianca"],
+      "properties": {
+        "tipo": { "type": "string", "enum": ["municipios_ibge", "sem_territorio"] },
+        "municipios_ibge": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "IBGE 7-digit municipality codes."
+        },
+        "fonte": { "type": ["string", "null"] },
+        "fonte_url": { "type": ["string", "null"] },
+        "verificado_em": { "type": ["string", "null"], "format": "date" },
+        "confianca": { "$ref": "#/$defs/confianca" }
+      }
+    },
+    "crosswalk": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "wikidata_qid": { "type": ["string", "null"] },
+        "gcatholic_id": { "type": ["string", "null"] },
+        "catholic_hierarchy_id": { "type": ["string", "null"] },
+        "cdic_id": {
+          "type": ["string", "null"],
+          "description": "Reserved for the CNBB's Centro de Dados da Igreja Católica no Brasil (announced April 2026). Null until that dataset is public."
+        }
+      }
+    }
+  },
+  "$defs": {
+    "confianca": {
+      "type": "string",
+      "enum": ["alta", "media", "baixa", "nao_verificado"]
+    },
+    "provenanced_value": {
+      "type": "object",
+      "required": ["valor", "confianca"],
+      "additionalProperties": false,
+      "properties": {
+        "valor": {},
+        "fonte": { "type": ["string", "null"] },
+        "fonte_url": { "type": ["string", "null"] },
+        "verificado_em": { "type": ["string", "null"], "format": "date" },
+        "confianca": { "$ref": "#/$defs/confianca" }
+      }
+    },
+    "provenanced_string": {
+      "type": "object",
+      "required": ["valor", "confianca"],
+      "additionalProperties": false,
+      "properties": {
+        "valor": { "type": "string" },
+        "fonte": { "type": ["string", "null"] },
+        "fonte_url": { "type": ["string", "null"] },
+        "verificado_em": { "type": ["string", "null"], "format": "date" },
+        "confianca": { "$ref": "#/$defs/confianca" }
+      }
+    }
+  }
+}
