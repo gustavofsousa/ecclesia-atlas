@@ -1,10 +1,12 @@
 # Changelog
 
-## [Unreleased]
+## [Não lançado]
 
-### Added
+### Adicionado
 
-- Initial schema (`schema/circunscricao.schema.json`) for ecclesiastical circumscriptions.
-- Two example records validating the schema: an archdiocese with territory (Arquidiocese de São Salvador da Bahia), and a personal, non-territorial circumscription (Ordinariado Militar do Brasil).
-- Field-level provenance model (value + source + verification date + confidence) — see CONTRIBUTING.md.
-- MIT license for code, CC BY 4.0 for data.
+- Schema inicial (`schema/circunscricao.schema.json`) para circunscrições eclesiásticas.
+- Dois registros de exemplo validando o schema: uma arquidiocese com território (Arquidiocese de São Salvador da Bahia) e uma circunscrição pessoal, sem território (Ordinariado Militar do Brasil).
+- Modelo de proveniência por campo (valor + fonte + data de verificação + confiança) — ver CONTRIBUTING.md.
+- Licença MIT para o código, CC BY 4.0 para os dados.
+- ROADMAP.md com todas as fases e o anti-escopo; docs públicos em português.
+- Query SPARQL inicial para bootstrap das circunscrições a partir do Wikidata (`tools/wikidata-circunscricoes.rq`).

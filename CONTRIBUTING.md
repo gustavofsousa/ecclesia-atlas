@@ -1,8 +1,8 @@
-# Contributing
+# Como contribuir
 
-## The provenance model
+## O modelo de proveniência
 
-Every non-structural fact on a record — name, erection date, current bishop, territory — is stored as a small object, not a bare value:
+Todo fato não-estrutural de um registro — nome, data de ereção, bispo atual, território — é guardado como um pequeno objeto, não um valor solto:
 
 ```json
 {
@@ -14,19 +14,19 @@ Every non-structural fact on a record — name, erection date, current bishop, t
 }
 ```
 
-This is what makes the dataset auditable instead of "a spreadsheet on the internet": anyone can see *who* said a fact was true and *when it was last checked*, and can disagree at the field level instead of the whole record.
+É isso que torna o dataset auditável em vez de "uma planilha na internet": qualquer um vê *quem* afirmou que um fato é verdade e *quando foi verificado pela última vez*, e pode discordar no nível do campo, não do registro inteiro.
 
-## Submitting a correction
+## Enviar uma correção
 
-1. Open an issue or PR pointing at the specific file in `data/circunscricoes/`.
-2. State the field, the new value, and a source — a URL is enough (official diocesan site, Wikidata, GCatholic, Catholic-Hierarchy, news coverage of an episcopal appointment, etc.).
-3. Set `confianca` honestly. `nao_verificado` is a valid, expected value — better than a confident guess.
-4. Don't submit liturgical texts, Bible translations, or anything else with a licensed owner — facts and structural rules only (names, dates, hierarchy, territory), never copyrighted text. See [DATA_LICENSE.md](DATA_LICENSE.md).
+1. Abra uma issue ou PR apontando para o arquivo específico em `data/circunscricoes/`.
+2. Diga o campo, o novo valor e uma fonte — uma URL basta (site diocesano oficial, Wikidata, GCatholic, Catholic-Hierarchy, cobertura de imprensa de uma nomeação episcopal etc.).
+3. Preencha `confianca` com honestidade. `nao_verificado` é um valor válido e esperado — melhor do que um palpite confiante.
+4. Não envie textos litúrgicos, traduções bíblicas ou qualquer coisa com dono licenciado — apenas fatos e regras estruturais (nomes, datas, hierarquia, território), nunca texto protegido. Ver [DATA_LICENSE.md](DATA_LICENSE.md).
 
-## Schema changes
+## Mudanças no schema
 
-The schema lives in `schema/circunscricao.schema.json`. Changes there affect every existing record — open an issue first to discuss before sending a PR that changes the schema itself.
+O schema fica em `schema/circunscricao.schema.json` (comentários em inglês, por ser código). Mudanças ali afetam todos os registros existentes — abra uma issue antes de mandar um PR que altere o próprio schema.
 
-## Adding a new circumscription
+## Adicionar uma nova circunscrição
 
-Copy the shape of an existing file in `data/circunscricoes/`, fill in what you can verify, and leave everything else with `confianca: "nao_verificado"` rather than guessing. A partially-filled, honestly-labeled record is useful; a fully-filled, unsourced one is not.
+Copie a forma de um arquivo existente em `data/circunscricoes/`, preencha o que puder verificar e deixe o resto com `confianca: "nao_verificado"` em vez de adivinhar. Um registro parcial e honestamente rotulado é útil; um registro cheio e sem fonte não é.

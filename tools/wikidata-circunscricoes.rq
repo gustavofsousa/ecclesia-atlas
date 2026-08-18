@@ -1,0 +1,34 @@
+# Bootstrap das circunscrições eclesiásticas do Brasil a partir do Wikidata.
+# Mesmo caminho de ingestão que o OpenChurch (Hozana) usa: SPARQL, não scraping de HTML.
+#
+# RASCUNHO — validar ao rodar. O filtro de classe (P31/P279*) abaixo é uma
+# hipótese; conferir no endpoint quais QIDs de "diocese católica" / "circunscrição
+# eclesiástica" cobrem os ~280 casos brasileiros sem trazer ruído. Ajustar antes
+# de gerar arquivos em data/.
+#
+# Endpoint: https://query.wikidata.org/sparql
+# Rodar:    curl -s -H "Accept: text/csv" \
+#             --data-urlencode "query@tools/wikidata-circunscricoes.rq" \
+#             https://query.wikidata.org/sparql > tools/wikidata-raw.csv
+
+SELECT ?item ?itemLabel ?tipoLabel ?coord ?inicio ?provinciaLabel ?bispoLabel ?gcatholic ?catholicHierarchy
+WHERE {
+  # país = Brasil
+  ?item wdt:P17 wd:Q155 .
+
+  # instância de algo que seja (subclasse de) diocese/circunscrição católica.
+  # Q3146899 = "diocese católica" — CONFERIR se cobre arquidiocese, prelazia,
+  # eparquia, exarcado, ordinariado etc.; pode ser preciso enumerar QIDs.
+  ?item wdt:P31 ?tipo .
+  ?tipo wdt:P279* wd:Q3146899 .
+
+  OPTIONAL { ?item wdt:P625 ?coord . }               # coordenada
+  OPTIONAL { ?item wdt:P571 ?inicio . }              # data de ereção (inception)
+  OPTIONAL { ?item wdt:P4198 ?provincia . }          # província eclesiástica (conferir P)
+  OPTIONAL { ?item wdt:P... ?bispo . }               # bispo atual — achar a propriedade certa
+  OPTIONAL { ?item wdt:P8389 ?gcatholic . }          # GCatholic ID (conferir P)
+  OPTIONAL { ?item wdt:P1841 ?catholicHierarchy . }  # Catholic-Hierarchy diocese ID (conferir P)
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "pt-br,pt,en". }
+}
+ORDER BY ?itemLabel

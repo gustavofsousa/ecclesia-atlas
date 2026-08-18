@@ -1,39 +1,49 @@
 # Ecclesia Atlas
 
-> Open, versioned, field-sourced dataset of the Catholic Church's ecclesiastical structure in Brazil.
+> Base de dados aberta, versionada e com proveniência por campo da estrutura eclesiástica da Igreja Católica no Brasil.
 
-**Status:** early scaffold — schema and contribution model only, no real dataset yet. Personal project for now; will move to an org once there are outside contributors.
+*Open, versioned, field-sourced dataset of the Catholic Church's ecclesiastical structure in Brazil.*
 
-## Why this exists
+**Status:** esqueleto inicial — schema e modelo de contribuição prontos, dataset real ainda não. Repositório pessoal por enquanto; migra para uma organização quando houver contribuidores de fora.
 
-Anyone building something Catholic in Brazil — a parish app, a diocesan tool, a personal project — ends up rebuilding the same foundation from scratch: which ecclesiastical circumscriptions exist, what province and CNBB regional they belong to, which municipalities they cover, who the current bishop is. The data exists, but it's scattered across institutional sites, PDFs, and Wikipedia, with no stable identifiers and no way to know how reliable any given fact is.
+## Por que isto existe
 
-Ecclesia Atlas is that missing layer: a **dataset**, not an app. Structure and rules first. Liturgical texts and Bible translations are explicitly out of scope — those have licensed owners (see [DATA_LICENSE.md](DATA_LICENSE.md)).
+Quem quer construir qualquer coisa católica no Brasil — um app de paróquia, uma ferramenta diocesana, um projeto pessoal — acaba reconstruindo a mesma base do zero: quais circunscrições eclesiásticas existem, a que província e regional da CNBB pertencem, quais municípios cobrem, quem é o bispo atual. O dado existe, mas espalhado em sites institucionais, PDFs e Wikipédia, sem identificador estável e sem como saber o quão confiável é cada informação.
 
-## What this is not
+O Ecclesia Atlas é essa camada que falta: um **dataset**, não um app. Estrutura e regras primeiro. Textos litúrgicos e traduções da Bíblia estão explicitamente fora de escopo — têm donos licenciados (ver [DATA_LICENSE.md](DATA_LICENSE.md)).
 
-- Not a super-app (prayer + mass times + confession + donations).
-- Not a parish management / CRM system — see `ecclesiacrm`, and the CNBB's own CDIC project (Centro de Dados da Igreja Católica no Brasil, announced April 2026), which owns that space.
-- Not an authoritative registry. It's an open layer with declared provenance, pointing back to primary sources (Wikidata, GCatholic, Catholic-Hierarchy, and eventually CDIC once it publishes).
-- Not a redistribution of copyrighted liturgical texts or Bible translations.
+## O que isto NÃO é
 
-## Data model
+- Não é um super-app (oração + horários de missa + confissão + doação).
+- Não é um sistema de gestão paroquial / CRM — ver `ecclesiacrm`, e o próprio projeto CDIC da CNBB (Centro de Dados da Igreja Católica no Brasil, anunciado em abril de 2026), que ocupa esse espaço.
+- Não é fonte oficial. É uma camada aberta, com proveniência declarada, que aponta de volta para as fontes primárias (Wikidata, GCatholic, Catholic-Hierarchy e, no futuro, o CDIC quando publicar).
+- Não é redistribuição de textos litúrgicos ou traduções bíblicas protegidas por direito autoral.
 
-See [docs/data-model.md](docs/data-model.md): the three orthogonal axes (community / place / territory), the Brazilian ecclesiastical hierarchy, and the modeling traps this schema deliberately accounts for (CNBB Regional vs. Ecclesiastical Province, territorial vs. personal jurisdictions, IBGE municipalities as the atomic territorial unit).
+## Roadmap
 
-## Provenance model
+O plano completo — todas as fases, o que é reservado e o que não será construído — está em [ROADMAP.md](ROADMAP.md).
 
-Every non-structural fact (name, erection date, current bishop, territory) carries its own source, verification date, and confidence level — not one blanket "source" field per record. See [CONTRIBUTING.md](CONTRIBUTING.md).
+## Onde entra a API?
 
-## No server, on purpose
+Resumo (detalhe no [ROADMAP.md](ROADMAP.md), Fase 2): a API **não** é a Fase 1 e **nunca** é a fonte da verdade — o dado versionado no Git é. A API é uma camada de consumo derivada, em três níveis:
 
-v0 is flat JSON files under `data/`, validated against `schema/circunscricao.schema.json`. No API, no database, no required infrastructure to consume it — read the files directly from GitHub (raw or via a CDN like jsDelivr) or clone the repo. A read API can sit on top later without changing how the data is stored.
+1. **Nível 0 (já disponível, zero infra):** ler os arquivos JSON direto do GitHub (raw) ou por uma CDN como o jsDelivr. Isto já é uma "API de leitura" estática.
+2. **Nível 1:** um passo de build que compila os registros em arquivos agregados (`all.json`, GeoJSON derivado da malha do IBGE), publicados como artefatos de release.
+3. **Nível 2 (condicional):** uma API REST/GraphQL serverless de leitura — só se houver demanda que justifique a manutenção.
 
-## License
+## Sem servidor, de propósito
 
-- **Code** (schema, tooling): [MIT](LICENSE).
-- **Data** (`data/`): [CC BY 4.0](DATA_LICENSE.md) — see that file for the reasoning and an important disclaimer.
+A v0 é JSON plano em `data/`, validado contra `schema/circunscricao.schema.json`. Sem API obrigatória, sem banco, sem infraestrutura para consumir. Isso é o antídoto contra o modo de falha nº 1 do nicho: o projeto precisa continuar útil mesmo se ficar seis meses sem manutenção.
 
-## Open questions
+## Modelo de dados
 
-A handful of decisions are deliberately still open and will be resolved in a dedicated roadmap pass rather than guessed at here: how much of Brazil's territorial coverage actually fits the IBGE-municipality assumption, whether to build a liturgical calendar engine (`Ordo`) in-house or contribute upstream to `romcal`, posture toward the CNBB's CDIC project as it matures, and the final MVP cut (parish-level data is a different order of magnitude from diocese-level and is deliberately not started here).
+Ver [docs/data-model.md](docs/data-model.md): os três eixos ortogonais (comunidade / lugar / território), a hierarquia eclesiástica brasileira e as armadilhas de modelagem que este schema trata de propósito.
+
+## Modelo de proveniência
+
+Todo fato não-estrutural (nome, data de ereção, bispo atual, território) carrega a própria fonte, data de verificação e nível de confiança — não um campo "fonte" único por registro. Ver [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Licença
+
+- **Código** (schema, ferramentas): [MIT](LICENSE).
+- **Dados** (`data/`): [CC BY 4.0](DATA_LICENSE.md) — ver o arquivo para o raciocínio e um aviso legal importante.

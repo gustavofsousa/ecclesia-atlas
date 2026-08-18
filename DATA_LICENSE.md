@@ -1,24 +1,24 @@
-# Data license
+# Licença dos dados
 
-All data files under `data/` are licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+Todos os arquivos de dados sob `data/` estão licenciados sob **Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)**.
 
-https://creativecommons.org/licenses/by/4.0/
+https://creativecommons.org/licenses/by/4.0/deed.pt-br
 
-You are free to share and adapt this data, for any purpose, including commercially, as long as you give appropriate attribution to the Ecclesia Atlas project and indicate if changes were made.
+Você é livre para compartilhar e adaptar estes dados, para qualquer finalidade, inclusive comercial, desde que dê a atribuição apropriada ao projeto Ecclesia Atlas e indique se houve mudanças.
 
-## Why CC BY over ODbL / CC0
+## Por que CC BY, e não ODbL / CC0
 
-The project's working thesis is that adoption compounds faster than protection does at this stage — CC BY maximizes reuse while still requiring attribution back to the dataset (and, transitively, to the sources it declares per field). This may be revisited later if the dataset is targeted by closed re-packaging without attribution.
+A tese de trabalho é que, neste estágio, adoção compõe mais rápido do que proteção. O CC BY maximiza o reúso e ainda assim exige atribuição de volta ao dataset (e, transitivamente, às fontes que ele declara por campo). Isso pode ser revisto se o dataset for alvo de re-empacotamento fechado sem atribuição.
 
-## What is explicitly NOT covered by this license
+## O que esta licença explicitamente NÃO cobre
 
-This project does not, and will not, distribute:
+Este projeto não distribui, e não vai distribuir:
 
-- Liturgical texts (mass readings, official prayers, proper texts).
-- Bible translations (e.g. Ave-Maria, CNBB translations) — these have licensed commercial owners.
+- Textos litúrgicos (leituras da missa, orações próprias, textos do Próprio).
+- Traduções da Bíblia (ex.: Ave-Maria, tradução da CNBB) — têm donos comerciais licenciados.
 
-`Ecclesia Ordo` (a possible future liturgical-calendar layer) is scoped to return *references* to what a given day's liturgy is (e.g. "Assumption, solemnity, white, first reading Rev 11:19a;12:1-6a.10ab") — never the text itself. Whoever holds the text license resolves the text.
+Um possível `Ecclesia Ordo` (futura camada de calendário litúrgico) tem escopo de retornar *referências* ao que é a liturgia de um dado dia (ex.: "Assunção, solenidade, cor branca, 1ª leitura Ap 11,19a;12,1-6a.10ab") — nunca o texto em si. Quem detém a licença do texto resolve o texto.
 
-## Disclaimer
+## Aviso
 
-This is a working default, not a legal opinion. It has not been reviewed against Brazilian database/compilation law (Lei 9.610/98). Treat it as provisional until validated with someone who practices IP law in Brazil.
+Isto é um padrão de trabalho, não um parecer jurídico. Não foi revisado à luz da lei brasileira de bancos de dados/compilações (Lei 9.610/98). Trate como provisório até validar com alguém que atue em propriedade intelectual no Brasil.
