@@ -1,0 +1,55 @@
+name: "Correção de dado"
+description: "Corrigir ou adicionar um fato de uma circunscrição (nome, bispo, data, território…)"
+title: "[dado] "
+labels: ["dado"]
+body:
+  - type: input
+    id: circunscricao
+    attributes:
+      label: Circunscrição
+      description: "Nome ou id do arquivo em data/circunscricoes/ (ex.: arquidiocese-de-sao-salvador-da-bahia)"
+      placeholder: "arquidiocese-de-sao-salvador-da-bahia"
+    validations:
+      required: true
+  - type: input
+    id: campo
+    attributes:
+      label: Campo
+      description: "Qual campo está errado ou faltando?"
+      placeholder: "bispo_atual.nome"
+    validations:
+      required: true
+  - type: input
+    id: valor
+    attributes:
+      label: Valor correto
+      placeholder: "Dom Fulano de Tal"
+    validations:
+      required: true
+  - type: input
+    id: fonte
+    attributes:
+      label: Fonte (URL)
+      description: "Site diocesano oficial, Wikidata, GCatholic, Catholic-Hierarchy, notícia da nomeação…"
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: dropdown
+    id: confianca
+    attributes:
+      label: Confiança
+      description: "O quão certo você está? 'nao_verificado' é uma resposta válida e honesta."
+      options:
+        - alta
+        - media
+        - baixa
+        - nao_verificado
+    validations:
+      required: true
+  - type: checkboxes
+    id: escopo
+    attributes:
+      label: Confirmação de escopo
+      options:
+        - label: "Isto é um fato/estrutura (nome, data, hierarquia, território) — não texto litúrgico nem tradução bíblica protegida por direito autoral."
+          required: true

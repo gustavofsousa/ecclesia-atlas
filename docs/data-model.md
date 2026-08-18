@@ -1,5 +1,13 @@
 # Modelo de dados
 
+## Convenção de idioma (ABERTO-10, resolvido)
+
+Regra explícita para o primeiro contribuidor não mandar um PR renomeando tudo:
+
+- **Dados e nomes de campo em pt-BR** (`circunscricao`, `regional_cnbb`, `granularidade_territorial`). O domínio é brasileiro e termos como "circunscrição eclesiástica" não têm tradução precisa — traduzir os campos perderia precisão canônica.
+- **Comentários de código e do schema em inglês** (`$comment`, `description`).
+- **README bilíngue**; demais docs de prosa em pt-BR (público de contribuidores exclusivamente brasileiro).
+
 ## Três eixos ortogonais
 
 Uma paróquia e um edifício de igreja não são a mesma coisa. Confundir os dois é o erro de modelagem mais comum deste nicho.

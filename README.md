@@ -31,6 +31,27 @@ Resumo (detalhe no [ROADMAP.md](ROADMAP.md), Fase 2): a API **não** é a Fase 1
 2. **Nível 1:** um passo de build que compila os registros em arquivos agregados (`all.json`, GeoJSON derivado da malha do IBGE), publicados como artefatos de release.
 3. **Nível 2 (condicional):** uma API REST/GraphQL serverless de leitura — só se houver demanda que justifique a manutenção.
 
+## Ver o dado agora
+
+O repositório é público; cada circunscrição é um arquivo JSON. Sem instalar nada:
+
+```bash
+# via jsDelivr (CDN, com cache)
+curl -s https://cdn.jsdelivr.net/gh/gustavofsousa/ecclesia-atlas@main/data/circunscricoes/arquidiocese-de-sao-salvador-da-bahia.json
+
+# ou direto do GitHub (raw)
+curl -s https://raw.githubusercontent.com/gustavofsousa/ecclesia-atlas/main/data/circunscricoes/ordinariado-militar-do-brasil.json
+```
+
+```js
+const base = "https://cdn.jsdelivr.net/gh/gustavofsousa/ecclesia-atlas@main";
+const arq = await fetch(`${base}/data/circunscricoes/arquidiocese-de-sao-salvador-da-bahia.json`)
+  .then((r) => r.json());
+console.log(arq.nome.valor, "—", arq.tipo);
+```
+
+> Dica: fixe uma tag de release (`@v0.1.0`) em vez de `@main` para consumo estável.
+
 ## Sem servidor, de propósito
 
 A v0 é JSON plano em `data/`, validado contra `schema/circunscricao.schema.json`. Sem API obrigatória, sem banco, sem infraestrutura para consumir. Isso é o antídoto contra o modo de falha nº 1 do nicho: o projeto precisa continuar útil mesmo se ficar seis meses sem manutenção.

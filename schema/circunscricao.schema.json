@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/gustavofsousa/ecclesia-atlas/blob/main/schema/circunscricao.schema.json",
   "title": "Circunscrição Eclesiástica",
+  "$comment": "Every provenanced field carries `metodo` (automatico|manual): re-running the SPARQL bootstrap must never overwrite a field written by a human. `verificado_em` has a per-field-type half-life — see docs/staleness.md.",
   "type": "object",
   "required": ["id", "nome", "tipo", "tipo_jurisdicao", "crosswalk"],
   "additionalProperties": false,
@@ -52,7 +53,7 @@
     "bispo_atual": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["oficio", "confianca"],
+      "required": ["oficio", "confianca", "metodo"],
       "properties": {
         "nome": { "type": ["string", "null"] },
         "oficio": { "type": "string" },
@@ -60,13 +61,14 @@
         "fonte": { "type": ["string", "null"] },
         "fonte_url": { "type": ["string", "null"] },
         "verificado_em": { "type": ["string", "null"], "format": "date" },
-        "confianca": { "$ref": "#/$defs/confianca" }
+        "confianca": { "$ref": "#/$defs/confianca" },
+        "metodo": { "$ref": "#/$defs/metodo" }
       }
     },
     "territorio": {
       "type": ["object", "null"],
       "additionalProperties": false,
-      "required": ["tipo", "confianca"],
+      "required": ["tipo", "confianca", "metodo"],
       "properties": {
         "tipo": { "type": "string", "enum": ["municipios_ibge", "sem_territorio"] },
         "municipios_ibge": {
@@ -77,7 +79,8 @@
         "fonte": { "type": ["string", "null"] },
         "fonte_url": { "type": ["string", "null"] },
         "verificado_em": { "type": ["string", "null"], "format": "date" },
-        "confianca": { "$ref": "#/$defs/confianca" }
+        "confianca": { "$ref": "#/$defs/confianca" },
+        "metodo": { "$ref": "#/$defs/metodo" }
       }
     },
     "crosswalk": {
@@ -99,28 +102,35 @@
       "type": "string",
       "enum": ["alta", "media", "baixa", "nao_verificado"]
     },
+    "metodo": {
+      "type": "string",
+      "enum": ["automatico", "manual"],
+      "description": "Who wrote this field's value: 'automatico' = a script/import (e.g. the SPARQL bootstrap); 'manual' = a human curator. The bootstrap must skip fields already marked 'manual' so human curation is never silently overwritten."
+    },
     "provenanced_value": {
       "type": "object",
-      "required": ["valor", "confianca"],
+      "required": ["valor", "confianca", "metodo"],
       "additionalProperties": false,
       "properties": {
         "valor": {},
         "fonte": { "type": ["string", "null"] },
         "fonte_url": { "type": ["string", "null"] },
         "verificado_em": { "type": ["string", "null"], "format": "date" },
-        "confianca": { "$ref": "#/$defs/confianca" }
+        "confianca": { "$ref": "#/$defs/confianca" },
+        "metodo": { "$ref": "#/$defs/metodo" }
       }
     },
     "provenanced_string": {
       "type": "object",
-      "required": ["valor", "confianca"],
+      "required": ["valor", "confianca", "metodo"],
       "additionalProperties": false,
       "properties": {
         "valor": { "type": "string" },
         "fonte": { "type": ["string", "null"] },
         "fonte_url": { "type": ["string", "null"] },
         "verificado_em": { "type": ["string", "null"], "format": "date" },
-        "confianca": { "$ref": "#/$defs/confianca" }
+        "confianca": { "$ref": "#/$defs/confianca" },
+        "metodo": { "$ref": "#/$defs/metodo" }
       }
     }
   }

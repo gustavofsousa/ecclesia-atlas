@@ -1,33 +1,38 @@
 # Bootstrap das circunscrições eclesiásticas do Brasil a partir do Wikidata.
-# Mesmo caminho de ingestão que o OpenChurch (Hozana) usa: SPARQL, não scraping de HTML.
+# Mesmo caminho de ingestão que o OpenChurch (Hozana): SPARQL, não scraping de HTML.
+# Adaptado de hozana/openchurch -> scripts/synchro.py (a query de "dioceses" de lá
+# usa a mesma classe-base Q665487 + P31/P279*, filtrando por país no import).
 #
-# RASCUNHO — validar ao rodar. O filtro de classe (P31/P279*) abaixo é uma
-# hipótese; conferir no endpoint quais QIDs de "diocese católica" / "circunscrição
-# eclesiástica" cobrem os ~280 casos brasileiros sem trazer ruído. Ajustar antes
-# de gerar arquivos em data/.
+# Diferenças em relação ao OpenChurch: filtramos país = Brasil (P17 = Q155) direto
+# na query, e trazemos também coordenada e data de ereção para popular o Atlas.
+#
+# Ainda a CONFERIR ao rodar:
+#   - Q665487 cobre arquidiocese/prelazia/eparquia/exarcado/ordinariado, ou é preciso
+#     acrescentar QIDs de irmãos? (o P279* deve puxar subclasses — validar a contagem
+#     contra os ~280 esperados).
+#   - Propriedade do bispo atual (P... abaixo): achar a correta; o synchro.py NÃO puxa
+#     bispo, então isto é acréscimo nosso. Enquanto não confirmado, deixar OPTIONAL.
+#   - Catholic-Hierarchy ID: confirmar o P-number antes de mapear para crosswalk.
 #
 # Endpoint: https://query.wikidata.org/sparql
 # Rodar:    curl -s -H "Accept: text/csv" \
 #             --data-urlencode "query@tools/wikidata-circunscricoes.rq" \
 #             https://query.wikidata.org/sparql > tools/wikidata-raw.csv
 
-SELECT ?item ?itemLabel ?tipoLabel ?coord ?inicio ?provinciaLabel ?bispoLabel ?gcatholic ?catholicHierarchy
+SELECT DISTINCT ?item ?itemLabel ?tipo ?tipoLabel ?coord ?inicio ?site ?gcatholic ?bispo ?bispoLabel
 WHERE {
+  # instância de (subclasse de)* diocese — classe-base confirmada no synchro.py do OpenChurch
+  ?item (wdt:P31/wdt:P279*) wd:Q665487 .
+  ?item wdt:P31 ?tipo .
+
   # país = Brasil
   ?item wdt:P17 wd:Q155 .
 
-  # instância de algo que seja (subclasse de) diocese/circunscrição católica.
-  # Q3146899 = "diocese católica" — CONFERIR se cobre arquidiocese, prelazia,
-  # eparquia, exarcado, ordinariado etc.; pode ser preciso enumerar QIDs.
-  ?item wdt:P31 ?tipo .
-  ?tipo wdt:P279* wd:Q3146899 .
-
-  OPTIONAL { ?item wdt:P625 ?coord . }               # coordenada
-  OPTIONAL { ?item wdt:P571 ?inicio . }              # data de ereção (inception)
-  OPTIONAL { ?item wdt:P4198 ?provincia . }          # província eclesiástica (conferir P)
-  OPTIONAL { ?item wdt:P... ?bispo . }               # bispo atual — achar a propriedade certa
-  OPTIONAL { ?item wdt:P8389 ?gcatholic . }          # GCatholic ID (conferir P)
-  OPTIONAL { ?item wdt:P1841 ?catholicHierarchy . }  # Catholic-Hierarchy diocese ID (conferir P)
+  OPTIONAL { ?item wdt:P625 ?coord . }      # coordenada
+  OPTIONAL { ?item wdt:P571 ?inicio . }     # data de ereção (inception)
+  OPTIONAL { ?item wdt:P856 ?site . }       # site oficial (confirmado no synchro.py)
+  OPTIONAL { ?item wdt:P8389 ?gcatholic . } # GCatholic ID (confirmado no synchro.py)
+  OPTIONAL { ?item wdt:P6 ?bispo . }        # RASCUNHO: bispo/ordinário — achar a P correta
 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "pt-br,pt,en". }
 }

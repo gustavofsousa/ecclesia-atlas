@@ -5,7 +5,8 @@
     "fonte": "wikipedia_pt",
     "fonte_url": "https://pt.wikipedia.org/wiki/Circunscri%C3%A7%C3%B5es_eclesi%C3%A1sticas_cat%C3%B3licas_do_Brasil",
     "verificado_em": "2026-08-18",
-    "confianca": "media"
+    "confianca": "media",
+    "metodo": "manual"
   },
   "tipo": "ordinariado_militar",
   "tipo_jurisdicao": "pessoal",
@@ -17,7 +18,8 @@
     "fonte": null,
     "fonte_url": null,
     "verificado_em": null,
-    "confianca": "nao_verificado"
+    "confianca": "nao_verificado",
+    "metodo": "manual"
   },
   "bispo_atual": {
     "nome": null,
@@ -26,7 +28,8 @@
     "fonte": null,
     "fonte_url": null,
     "verificado_em": null,
-    "confianca": "nao_verificado"
+    "confianca": "nao_verificado",
+    "metodo": "manual"
   },
   "territorio": {
     "tipo": "sem_territorio",
@@ -34,7 +37,8 @@
     "fonte": null,
     "fonte_url": null,
     "verificado_em": null,
-    "confianca": "nao_verificado"
+    "confianca": "nao_verificado",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": null,

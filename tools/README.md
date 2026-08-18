@@ -2,7 +2,7 @@
 
 Scripts de ingestão e validação. Comentários em inglês por serem código; ver `../ROADMAP.md` Fase 1 para o contexto.
 
-- `wikidata-circunscricoes.rq` — query SPARQL inicial para popular as circunscrições a partir do Wikidata (bootstrap da Fase 1a). **Rascunho** — os QIDs de classe e algumas propriedades precisam ser confirmados no endpoint antes de gerar arquivos em `../data/`.
+- `wikidata-circunscricoes.rq` — query SPARQL inicial para popular as circunscrições a partir do Wikidata (bootstrap da Fase 1-A). Classe-base `Q665487` e propriedades P8389/P856 confirmadas na `scripts/synchro.py` do OpenChurch. Ainda **rascunho** para a propriedade do bispo e para o Catholic-Hierarchy ID — conferir no endpoint antes de gerar arquivos em `../data/`.
 
 ## Próximos scripts (Fase 1)
 
