@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": null,
+  "granularidade_territorial": "indefinido",
   "regional_cnbb": null,
   "provincia_eclesiastica": {
     "id": "provincia-de-sao-salvador-da-bahia",
@@ -44,9 +44,17 @@
     "metodo": "manual"
   },
   "crosswalk": {
-    "wikidata_qid": null,
-    "gcatholic_id": null,
+    "wikidata_qid": "Q1365662",
+    "gcatholic_id": "zsal0",
     "catholic_hierarchy_id": null,
     "cdic_id": null
+  },
+  "site_oficial": {
+    "valor": "http://www.arquidiocesesalvador.org.br/",
+    "fonte": "wikidata (P856)",
+    "fonte_url": "http://www.wikidata.org/entity/Q1365662",
+    "verificado_em": "2026-08-18",
+    "confianca": "media",
+    "metodo": "automatico"
   }
 }

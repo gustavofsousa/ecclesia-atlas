@@ -1,0 +1,57 @@
+{
+  "id": "diocese-de-piracicaba",
+  "nome": {
+    "valor": "Diocese de Piracicaba",
+    "fonte": "wikidata",
+    "fonte_url": "http://www.wikidata.org/entity/Q874269",
+    "verificado_em": "2026-08-18",
+    "confianca": "media",
+    "metodo": "automatico"
+  },
+  "tipo": "diocese",
+  "tipo_jurisdicao": "territorial",
+  "granularidade_territorial": "indefinido",
+  "regional_cnbb": null,
+  "provincia_eclesiastica": null,
+  "ereta_em": {
+    "valor": "1944-01-01",
+    "fonte": "wikidata (P571 inception)",
+    "fonte_url": "http://www.wikidata.org/entity/Q874269",
+    "verificado_em": "2026-08-18",
+    "confianca": "media",
+    "metodo": "automatico"
+  },
+  "site_oficial": {
+    "valor": "http://www.diocesedepiracicaba.org.br/",
+    "fonte": "wikidata (P856)",
+    "fonte_url": "http://www.wikidata.org/entity/Q874269",
+    "verificado_em": "2026-08-18",
+    "confianca": "media",
+    "metodo": "automatico"
+  },
+  "bispo_atual": {
+    "nome": null,
+    "oficio": "bispo",
+    "valido_de": null,
+    "fonte": null,
+    "fonte_url": null,
+    "verificado_em": null,
+    "confianca": "nao_verificado",
+    "metodo": "automatico"
+  },
+  "territorio": {
+    "tipo": "municipios_ibge",
+    "municipios_ibge": [],
+    "fonte": null,
+    "fonte_url": null,
+    "verificado_em": null,
+    "confianca": "nao_verificado",
+    "metodo": "automatico"
+  },
+  "crosswalk": {
+    "wikidata_qid": "Q874269",
+    "gcatholic_id": "pira0",
+    "catholic_hierarchy_id": null,
+    "cdic_id": null
+  }
+}
