@@ -1,0 +1,61 @@
+{
+  "id": "diocese-de-votuporanga",
+  "nome": {
+    "valor": "Diocese de Votuporanga",
+    "fonte": "wikidata",
+    "fonte_url": "http://www.wikidata.org/entity/Q25935733",
+    "verificado_em": "2026-08-18",
+    "confianca": "media",
+    "metodo": "automatico"
+  },
+  "tipo": "diocese",
+  "tipo_jurisdicao": "territorial",
+  "granularidade_territorial": "indefinido",
+  "regional_cnbb": "sul-1",
+  "provincia_eclesiastica": {
+    "id": "diocese-de-sao-jose-do-rio-preto",
+    "papel": "sufraganea"
+  },
+  "site_oficial": {
+    "valor": "http://www.nossasenhoravotuporanga.com.br/",
+    "fonte": "wikidata (P856)",
+    "fonte_url": "http://www.wikidata.org/entity/Q25935733",
+    "verificado_em": "2026-08-18",
+    "confianca": "media",
+    "metodo": "automatico"
+  },
+  "coordenada": {
+    "lat": -20.422777777,
+    "lon": -49.972777777,
+    "fonte": "wikidata (P625)",
+    "fonte_url": "http://www.wikidata.org/entity/Q25935733",
+    "verificado_em": "2026-08-18",
+    "confianca": "media",
+    "metodo": "automatico"
+  },
+  "bispo_atual": {
+    "nome": null,
+    "oficio": "bispo",
+    "valido_de": null,
+    "fonte": null,
+    "fonte_url": null,
+    "verificado_em": null,
+    "confianca": "nao_verificado",
+    "metodo": "automatico"
+  },
+  "territorio": {
+    "tipo": "municipios_ibge",
+    "municipios_ibge": [],
+    "fonte": null,
+    "fonte_url": null,
+    "verificado_em": null,
+    "confianca": "nao_verificado",
+    "metodo": "automatico"
+  },
+  "crosswalk": {
+    "wikidata_qid": "Q25935733",
+    "gcatholic_id": "votu0",
+    "catholic_hierarchy_id": null,
+    "cdic_id": null
+  }
+}

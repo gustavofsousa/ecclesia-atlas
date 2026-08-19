@@ -1,0 +1,52 @@
+{
+  "id": "prelazia-de-coari",
+  "nome": {
+    "valor": "Prelazia de Coari",
+    "fonte": "wikidata",
+    "fonte_url": "http://www.wikidata.org/entity/Q976774",
+    "verificado_em": "2026-08-18",
+    "confianca": "media",
+    "metodo": "automatico"
+  },
+  "tipo": "prelazia_territorial",
+  "tipo_jurisdicao": "territorial",
+  "granularidade_territorial": "indefinido",
+  "regional_cnbb": "norte-1",
+  "provincia_eclesiastica": {
+    "id": "arquidiocese-de-manaus",
+    "papel": "sufraganea"
+  },
+  "site_oficial": {
+    "valor": "http://www.prelaziadecoari.blogspot.com.br/",
+    "fonte": "wikidata (P856)",
+    "fonte_url": "http://www.wikidata.org/entity/Q976774",
+    "verificado_em": "2026-08-18",
+    "confianca": "media",
+    "metodo": "automatico"
+  },
+  "bispo_atual": {
+    "nome": null,
+    "oficio": "bispo",
+    "valido_de": null,
+    "fonte": null,
+    "fonte_url": null,
+    "verificado_em": null,
+    "confianca": "nao_verificado",
+    "metodo": "automatico"
+  },
+  "territorio": {
+    "tipo": "municipios_ibge",
+    "municipios_ibge": [],
+    "fonte": null,
+    "fonte_url": null,
+    "verificado_em": null,
+    "confianca": "nao_verificado",
+    "metodo": "automatico"
+  },
+  "crosswalk": {
+    "wikidata_qid": "Q976774",
+    "gcatholic_id": "coar0",
+    "catholic_hierarchy_id": null,
+    "cdic_id": null
+  }
+}
