@@ -50,6 +50,22 @@
       }
     },
     "ereta_em": { "$ref": "#/$defs/provenanced_value" },
+    "site_oficial": { "$ref": "#/$defs/provenanced_string" },
+    "coordenada": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["lat", "lon", "confianca", "metodo"],
+      "$comment": "Representative point (e.g. the see city), NOT a boundary. Territory lives in `territorio.municipios_ibge`.",
+      "properties": {
+        "lat": { "type": "number" },
+        "lon": { "type": "number" },
+        "fonte": { "type": ["string", "null"] },
+        "fonte_url": { "type": ["string", "null"] },
+        "verificado_em": { "type": ["string", "null"], "format": "date" },
+        "confianca": { "$ref": "#/$defs/confianca" },
+        "metodo": { "$ref": "#/$defs/metodo" }
+      }
+    },
     "bispo_atual": {
       "type": "object",
       "additionalProperties": false,
