@@ -53,10 +53,12 @@ A Fase 1 tem uma vara longa escondida: montar a lista de municípios por circuns
 
 ### Fase 1-A — Estrutura, sem território → `v0.1.0`
 
-- **1A.1 Bootstrap via Wikidata (SPARQL).** Classe-base confirmada: `wd:Q665487` (diocese), filtrada por `wdt:P17 = wd:Q155` (Brasil). Popula id, nome, tipo, QID, GCatholic (P8389), site (P856), coordenada (P625). Query em `tools/wikidata-circunscricoes.rq`, adaptada da `scripts/synchro.py` do OpenChurch. Tudo que o script escreve entra como `metodo: "automatico"`.
-- **1A.2 Curadoria manual dos ~280.** Preencher lacunas, marcar `confianca` honesta, resolver as armadilhas de modelagem (Regional CNBB ≠ Província; jurisdição pessoal vs. territorial). Campos corrigidos à mão viram `metodo: "manual"` e ficam protegidos de re-rodadas do bootstrap. Território fica `granularidade_territorial: indefinido`.
-- **1A.3 Validação em CI.** GitHub Action rodando o `jsonschema` contra todos os arquivos em cada PR.
-- **1A.4 Release `v0.1.0`** (tag imutável) + divulgação (ver abaixo).
+- **1A.1 Bootstrap via Wikidata (SPARQL). ✅** Classe-base confirmada: `wd:Q665487` (diocese), filtrada por `wdt:P17 = wd:Q155` (Brasil). Popula id, nome, tipo, QID, GCatholic (P8389), site (P856), coordenada (P625), data de ereção (P571). Query em `tools/wikidata-circunscricoes.rq`, transformada por `tools/wikidata-to-json.py`, adaptada da `scripts/synchro.py` do OpenChurch. Tudo que o script escreve entra como `metodo: "automatico"`. Bispo atual ficou `nao_verificado` (P6 é impreciso para bispo diocesano — deferido para curadoria).
+  - **Escopo atual: só o padrão e comum** — dioceses e arquidioceses territoriais de rito latino. **Resultado (2026-08-18): 266 circunscrições** (218 dioceses + 48 arquidioceses), o seed manual de Salvador preservado no merge.
+  - Dos 300 itens do Wikidata: **18 descartes de ruído** (sés extintas/suprimidas, diocese anglicana, igreja ortodoxa, províncias) em `tools/wikidata-excluded.csv`; **16 deferidos para fases futuras** em `tools/wikidata-deferred.csv` — prelazias territoriais, eparquias/arquieparquias/exarcado de rito oriental, ordinariado militar e ordinariado oriental. Nada dropado em silêncio. Fazer bem o caso comum primeiro; o resto é escopo declarado de fase futura (não anti-escopo).
+- **1A.2 Curadoria manual dos ~280. 🔜 (próximo)** Preencher lacunas, marcar `confianca` honesta, resolver as armadilhas de modelagem (Regional CNBB ≠ Província; jurisdição pessoal vs. territorial). O bootstrap deixou `regional_cnbb` e `provincia_eclesiastica` como `null` de propósito — **não há fonte automática confiável para eles**, é curadoria à mão. Campos corrigidos à mão viram `metodo: "manual"` e ficam protegidos de re-rodadas do bootstrap. Território fica `granularidade_territorial: indefinido`.
+- **1A.3 Validação em CI. ✅** `tools/validate.py` (jsonschema + invariantes de domínio) e GitHub Action `.github/workflows/validate.yml` rodando em cada push/PR. **Ativa ao dar push** (ainda não commitado).
+- **1A.4 Release `v0.1.0`** (tag imutável) + divulgação (ver abaixo). ⏳ Só depois de 1A.2 preencher `regional_cnbb`/`provincia_eclesiastica`.
 
 **Pronto quando:** as ~280 circunscrições existem como arquivos válidos, com `regional_cnbb` e `provincia_eclesiastica` preenchidos, e um release imutável publicado.
 
