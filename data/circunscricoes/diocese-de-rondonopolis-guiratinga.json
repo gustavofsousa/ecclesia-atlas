@@ -11,8 +11,11 @@
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
   "granularidade_territorial": "indefinido",
-  "regional_cnbb": null,
-  "provincia_eclesiastica": null,
+  "regional_cnbb": "oeste-2",
+  "provincia_eclesiastica": {
+    "id": "arquidiocese-de-cuiaba",
+    "papel": "sufraganea"
+  },
   "ereta_em": {
     "valor": "1940-01-01",
     "fonte": "wikidata (P571 inception)",

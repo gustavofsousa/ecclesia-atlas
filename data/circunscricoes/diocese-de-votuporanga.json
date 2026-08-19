@@ -11,8 +11,11 @@
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
   "granularidade_territorial": "indefinido",
-  "regional_cnbb": null,
-  "provincia_eclesiastica": null,
+  "regional_cnbb": "sul-1",
+  "provincia_eclesiastica": {
+    "id": "diocese-de-sao-jose-do-rio-preto",
+    "papel": "sufraganea"
+  },
   "site_oficial": {
     "valor": "http://www.nossasenhoravotuporanga.com.br/",
     "fonte": "wikidata (P856)",

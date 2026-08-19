@@ -11,9 +11,9 @@
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
   "granularidade_territorial": "indefinido",
-  "regional_cnbb": null,
+  "regional_cnbb": "nordeste-3",
   "provincia_eclesiastica": {
-    "id": "provincia-de-sao-salvador-da-bahia",
+    "id": "arquidiocese-de-sao-salvador-da-bahia",
     "papel": "metropolitana"
   },
   "ereta_em": {

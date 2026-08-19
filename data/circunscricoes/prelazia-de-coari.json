@@ -11,8 +11,11 @@
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
   "granularidade_territorial": "indefinido",
-  "regional_cnbb": null,
-  "provincia_eclesiastica": null,
+  "regional_cnbb": "norte-1",
+  "provincia_eclesiastica": {
+    "id": "arquidiocese-de-manaus",
+    "papel": "sufraganea"
+  },
   "site_oficial": {
     "valor": "http://www.prelaziadecoari.blogspot.com.br/",
     "fonte": "wikidata (P856)",

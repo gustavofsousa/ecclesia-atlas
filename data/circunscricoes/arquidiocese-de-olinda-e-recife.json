@@ -11,8 +11,11 @@
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
   "granularidade_territorial": "indefinido",
-  "regional_cnbb": null,
-  "provincia_eclesiastica": null,
+  "regional_cnbb": "nordeste-2",
+  "provincia_eclesiastica": {
+    "id": "arquidiocese-de-olinda-e-recife",
+    "papel": "metropolitana"
+  },
   "site_oficial": {
     "valor": "http://www.arquidioceseolindarecife.org/",
     "fonte": "wikidata (P856)",
