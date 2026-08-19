@@ -8,7 +8,7 @@
     "confianca": "media",
     "metodo": "automatico"
   },
-  "tipo": "diocese",
+  "tipo": "prelazia_territorial",
   "tipo_jurisdicao": "territorial",
   "granularidade_territorial": "indefinido",
   "regional_cnbb": "norte-2",
