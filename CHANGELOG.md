@@ -6,6 +6,7 @@
 
 - `tools/ibge-municipios.json` — referência oficial dos 5.571 municípios do Brasil (Fase 1-B, 1B.1), baixada da API do IBGE via `tools/fetch-ibge-municipios.py`.
 - `validate.py` agora confere `territorio.municipios_ibge` contra essa referência e garante que nenhum município seja reivindicado por duas circunscrições.
+- **Fase 1-B, 1B.2 (piloto):** `territorio.municipios_ibge` preenchido para as 26 arquidioceses/dioceses-sé de capital estadual (468 municípios ao todo), curado manualmente via Wikipédia/GCatholic cruzado com a referência IBGE. 24 com `granularidade_territorial: municipio`; 2 sub-municipais genuínas (Macapá, São Paulo).
 
 ## [v0.1.0] - 2026-09-18
 
