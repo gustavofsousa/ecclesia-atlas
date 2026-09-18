@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "norte-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-manaus",
@@ -44,12 +44,15 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "1301100", "1301159", "1301852", "1302553", "1302603", "1303205",
+      "1303536", "1303569"
+    ],
+    "fonte": "gcatholic (churches/local/mana1) cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://www.gcatholic.org/churches/local/mana1",
+    "verificado_em": "2026-09-18",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q1364949",

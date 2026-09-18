@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-4",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-teresina",
@@ -44,12 +44,18 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2200103", "2200202", "2200509", "2200608", "2200905", "2201408",
+      "2203305", "2203503", "2204006", "2204709", "2205557", "2206209",
+      "2206407", "2206720", "2206902", "2207108", "2207504", "2207751",
+      "2208106", "2208601", "2208809", "2209153", "2209609", "2209807",
+      "2210508", "2211001", "2211100", "2211308"
+    ],
+    "fonte": "gcatholic (churches/local/tere0) cruzado com tools/ibge-municipios.json — 28 municípios confirmados; DIVERGÊNCIA NÃO RESOLVIDA: a Wikipédia declara 22 municípios sem listar nomes, GCatholic lista 31 nomes (28 batem com IBGE, 3 descartados: Angelim, Piçarreira, Vila Meio Norte, não correspondem a município). Confiança rebaixada por essa discrepância não reconciliada.",
+    "fonte_url": "https://www.gcatholic.org/churches/local/tere0",
+    "verificado_em": "2026-09-18",
+    "confianca": "baixa",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q1365707",

@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "submunicipal",
   "regional_cnbb": "norte-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-belem-do-para",
@@ -44,12 +44,16 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "1600055", "1600105", "1600154", "1600204", "1600212", "1600238",
+      "1600253", "1600279", "1600303", "1600402", "1600501", "1600535",
+      "1600550", "1600600", "1600709", "1600808"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json — cobre a totalidade dos 16 municípios do Amapá; além disso a diocese tem jurisdição sobre 'algumas comunidades de ilhas' dos municípios de Gurupá, Chaves e Afuá (PA), que NÃO entram na lista por serem sub-municipais (granularidade_territorial: submunicipal)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Macapá",
+    "verificado_em": "2026-09-18",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q871604",
