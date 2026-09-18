@@ -64,11 +64,11 @@ A Fase 1 tem uma vara longa escondida: montar a lista de municípios por circuns
 
 ### Fase 1-B — Território → `v0.2.0`
 
-- **1B.1 Malha do IBGE.** Tabela `circunscricao × código IBGE de município`. GeoJSON é *derivado* por união da malha, nunca desenhado à mão.
-- **1B.2 Lista de municípios por circunscrição.** Onde o Wikidata não cobre, curadoria manual a partir da Wikipédia (campo *Territory*) e sites diocesanos.
+- **1B.1 Malha do IBGE. ✅ (2026-09-18)** `tools/ibge-municipios.json` — referência oficial dos 5.571 municípios do Brasil (`codigo_ibge` 7 dígitos, `nome`, `uf`), baixada de `servicodados.ibge.gov.br` por `tools/fetch-ibge-municipios.py`. `validate.py` agora confere todo `territorio.municipios_ibge` contra essa lista e garante que nenhum município pertença a duas circunscrições ao mesmo tempo. GeoJSON continua *derivado* por união da malha depois que 1B.2 povoar os dados, nunca desenhado à mão.
+- **1B.2 Lista de municípios por circunscrição.** 🔜 Curadoria manual em ~280 páginas — ver confirmação de cobertura abaixo.
 - **1B.3 Casos sub-municipais.** Ficam como `granularidade_territorial: submunicipal` sem geometria por ora (precedente do US mapper: minoria, resolvida por atribuição à circunscrição de maior proporção + edição manual).
 
-**Pré-requisito de estudo (antes de começar 1-B):** o `kburchfiel/us_diocese_mapper` já resolveu isto para os EUA — e o precedente **valida a aposta no IBGE**: ele agrega por condado (≡ município), dissolve em fronteira de diocese, com shapefile do censo + CSV condado→diocese curado à mão, e trata os condados divididos como minoria manual. Ou seja: união de malha administrativa é o caminho certo; ABERTO-2 está de-riscado. Reconfirmar a proporção real de casos sub-municipais no Brasil ao entrar na fase.
+**Pré-requisito de estudo — CONFIRMADO (2026-09-18):** o `kburchfiel/us_diocese_mapper` já validou a aposta no IBGE (agregação por unidade administrativa, não geometria desenhada à mão) — ABERTO-2 de-riscado por precedente. Reconfirmação direta para o Brasil: query SPARQL testada contra P527 ("has part") e P150 ("contains administrative territorial entity") nas ~280 dioceses/arquidioceses — **0 resultados em ambas**, Wikidata não tem esse relacionamento estruturado para o Brasil. A Wikipédia pt também não é uniforme: algumas páginas trazem a lista em prosa direta (ex. Arquidiocese de São Salvador da Bahia: "abrange os municípios de Itaparica, Lauro de Freitas, Salinas da Margarida, Salvador e Vera Cruz"), outras só têm o dado implícito na tabela de paróquias (ex. Diocese de Criciúma: "26 municípios", sem lista). **Conclusão: não há atalho automático — 1B.2 é curadoria manual página a página, como o roadmap já previa**, sem fonte estruturada única para basear um script de bootstrap.
 
 **Pronto quando:** território municipal preenchido para a maioria das circunscrições, com GeoJSON derivado publicado como artefato de release.
 

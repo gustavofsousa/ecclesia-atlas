@@ -1,5 +1,12 @@
 # Changelog
 
+## [Não lançado]
+
+### Adicionado
+
+- `tools/ibge-municipios.json` — referência oficial dos 5.571 municípios do Brasil (Fase 1-B, 1B.1), baixada da API do IBGE via `tools/fetch-ibge-municipios.py`.
+- `validate.py` agora confere `territorio.municipios_ibge` contra essa referência e garante que nenhum município seja reivindicado por duas circunscrições.
+
 ## [v0.1.0] - 2026-09-18
 
 ### Adicionado
