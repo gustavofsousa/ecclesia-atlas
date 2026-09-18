@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "oeste-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-campo-grande",
@@ -44,12 +44,15 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "5001508", "5002704", "5003108", "5004908", "5007109", "5007505",
+      "5007901", "5008008"
+    ],
+    "fonte": "wikipedia + gcatholic (churches/local/camp1), fontes concordantes, cruzado com tools/ibge-municipios.json (corrigida grafia 'Jarguari' -> Jaraguari); GCatholic também citava 'Taveirópolis', descartado por não corresponder a município",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Arquidiocese_de_Campo_Grande",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q1364278",
