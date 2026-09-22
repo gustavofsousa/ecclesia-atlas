@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-montes-claros",
@@ -44,12 +44,30 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3108255",
+      "3116159",
+      "3130051",
+      "3132107",
+      "3135209",
+      "3136959",
+      "3139300",
+      "3142254",
+      "3142700",
+      "3149150",
+      "3150570",
+      "3154457",
+      "3157609",
+      "3161106",
+      "3162450",
+      "3164209",
+      "3170529"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
+    "fonte_url": "https://gcatholic.org/churches/local/janu0",
+    "verificado_em": "2026-09-22",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q517535",

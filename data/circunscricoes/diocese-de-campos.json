@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-niteroi",
@@ -44,12 +44,12 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": ["3301009", "3302205", "3304706", "3300605", "3304805", "3304102", "3303005", "3305000", "3303104", "3306156", "3302056", "3302304", "3301157", "3300902", "3300159", "3304755", "3305133"],
+    "fonte": "wikipedia não tinha lista territorial explícita ('abrange as regiões Norte e Noroeste do RJ'); usado fallback do diretório oficial de paróquias (diocesedecampos.org.br/paroquias/), agregando as cidades-sede das paróquias listadas — confiança média por ser inferência de igrejas→município. Descartados 'Travessão de Campos' e 'Conselheiro Josino' (bairros/distritos sem código IBGE próprio) e 'Dores de Macabu' (distrito de Campos dos Goytacazes, já coberto)",
+    "fonte_url": "https://diocesedecampos.org.br/paroquias/",
+    "verificado_em": "2026-09-18",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867624",

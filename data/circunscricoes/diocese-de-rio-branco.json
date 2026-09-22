@@ -44,14 +44,10 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [
-      "1200013", "1200054", "1200104", "1200138", "1200179", "1200252",
-      "1200344", "1200385", "1200401", "1200435", "1200450", "1200500",
-      "1200708", "1200807", "1300706"
-    ],
-    "fonte": "gcatholic (churches/local/riob0) cruzado com tools/ibge-municipios.json",
-    "fonte_url": "https://www.gcatholic.org/churches/local/riob0",
-    "verificado_em": "2026-09-18",
+    "municipios_ibge": [],
+    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF. Nenhum município pôde ser confirmado nominalmente na fonte disponível.",
+    "fonte_url": "https://gcatholic.org/churches/local/riob0",
+    "verificado_em": "2026-09-22",
     "confianca": "media",
     "metodo": "manual"
   },

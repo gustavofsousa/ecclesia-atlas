@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-montes-claros",
@@ -44,12 +44,12 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": ["3106655", "3107307", "3108503", "3108602", "3111150", "3112703", "3116506", "3118809", "3120300", "3123809", "3126604", "3126703", "3127073", "3127354", "3127800", "3128253", "3129608", "3132008", "3135357", "3135605", "3136579", "3136801", "3137304", "3138658", "3138682", "3142007", "3143302", "3145372", "3145455", "3146255", "3147956", "3152131", "3156502", "3157005", "3157377", "3162252", "3162401", "3162658", "3168002", "3170008"],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Arquidiocese_de_Montes_Claros",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q1365081",

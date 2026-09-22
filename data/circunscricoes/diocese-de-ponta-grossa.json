@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-curitiba",
@@ -44,12 +44,29 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "4104659",
+      "4104907",
+      "4107736",
+      "4108957",
+      "4110078",
+      "4110102",
+      "4110508",
+      "4110706",
+      "4117305",
+      "4119400",
+      "4119905",
+      "4121703",
+      "4127007",
+      "4127106",
+      "4127502",
+      "4128534"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v2, fonte a)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Ponta_Grossa",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q874347",

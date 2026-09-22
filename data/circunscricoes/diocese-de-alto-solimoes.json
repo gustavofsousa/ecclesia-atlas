@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "norte-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-manaus",
@@ -36,12 +36,15 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "1300060", "1300201", "1300607", "1303700", "1303908", "1304062",
+      "1304237"
+    ],
+    "fonte": "wikipedia não tinha lista completa; confirmado via busca cruzando gcatholic.org e outras fontes secundárias — 7 municípios: Amaturá, Atalaia do Norte, Benjamin Constant, Santo Antônio do Içá, São Paulo de Olivença, Tabatinga, Tonantins. Cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Alto_Solimões",
+    "verificado_em": "2026-09-18",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q866805",

@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-uberaba",
@@ -44,12 +44,17 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3100708", "3104007", "3111408", "3116902", "3117306", "3118205",
+      "3121258", "3127008", "3127107", "3145000", "3149200", "3150703",
+      "3151602", "3152808", "3156403", "3156908", "3157708", "3168101",
+      "3170107", "3171105"
+    ],
+    "fonte": "wikipedia não lista território explícito; usado GCatholic (churches by city) como fallback, tratado como confiança media pois lista igrejas por cidade e não território declarado. Dois itens da página do GCatholic ('Aparecida de Minas', 'Ponte Alta') não correspondem a município real de MG em tools/ibge-municipios.json e foram descartados.",
+    "fonte_url": "https://gcatholic.org/churches/local/uber0",
+    "verificado_em": "2026-09-18",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q743847",

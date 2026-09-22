@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-pouso-alegre",
@@ -44,12 +44,22 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3101201", "3101300", "3104908", "3107109", "3110707", "3110905",
+      "3111309", "3111606", "3113602", "3113909", "3114105",
+      "3114808", "3115508", "3117207", "3117702", "3118700", "3119005",
+      "3120508", "3120805", "3122801", "3123601", "3128105", "3129202",
+      "3130507", "3133006", "3133105", "3135902", "3137809", "3142601",
+      "3144409", "3144607", "3145505", "3147600", "3149101", "3152600",
+      "3158300", "3160801", "3162005", "3163201", "3163706", "3164902",
+      "3165206", "3166402", "3167004", "3167806", "3169307", "3169406",
+      "3170701", "3171709"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json. Nota: fonte citava 'Santana do Capivari', que é distrito do município de Pouso Alto (já incluso na lista) — descartado por não ser município próprio; grafia 'São Thomé das Letras' corrigida para 'São Tomé das Letras' (nome oficial IBGE). Correção cross-file 2026-09-18: 'Carmo do Rio Claro' (3114402) removido — pertence à Diocese de Guaxupé, confirmado pelo site oficial guaxupe.org.br (página própria da cidade + 2 paróquias listadas), não à Diocese de Campanha.",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Campanha",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q628533",

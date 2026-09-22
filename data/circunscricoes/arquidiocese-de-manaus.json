@@ -45,12 +45,17 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [
-      "1301100", "1301159", "1301852", "1302553", "1302603", "1303205",
-      "1303536", "1303569"
+      "1301159",
+      "1301852",
+      "1302553",
+      "1302603",
+      "1303205",
+      "1303536",
+      "1303569"
     ],
-    "fonte": "gcatholic (churches/local/mana1) cruzado com tools/ibge-municipios.json",
-    "fonte_url": "https://www.gcatholic.org/churches/local/mana1",
-    "verificado_em": "2026-09-18",
+    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
+    "fonte_url": "https://gcatholic.org/churches/local/mana1",
+    "verificado_em": "2026-09-22",
     "confianca": "media",
     "metodo": "manual"
   },

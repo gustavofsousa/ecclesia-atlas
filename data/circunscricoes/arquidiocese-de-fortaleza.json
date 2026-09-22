@@ -45,14 +45,27 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [
-      "2301000", "2302206", "2303501", "2303709", "2303956", "2304285",
-      "2304400", "2304954", "2305233", "2306256", "2307650", "2307700",
-      "2308708", "2309607", "2309706", "2310852", "2312403"
+      "2301000",
+      "2302206",
+      "2303501",
+      "2303709",
+      "2303956",
+      "2304285",
+      "2304400",
+      "2304954",
+      "2305233",
+      "2306256",
+      "2307650",
+      "2307700",
+      "2309607",
+      "2309706",
+      "2310852",
+      "2312403"
     ],
-    "fonte": "gcatholic (churches/local/fort0) cruzado com tools/ibge-municipios.json — 2 nomes da fonte (Pitombeiras, Tabatinga) descartados por não corresponderem a município (bairro/distrito)",
-    "fonte_url": "https://www.gcatholic.org/churches/local/fort0",
-    "verificado_em": "2026-09-18",
-    "confianca": "media",
+    "fonte": "pesquisa dirigida (perplexity v2, fonte b)",
+    "fonte_url": "https://www.arquidiocesedefortaleza.org.br/arquidiocese/historia/dados-gerais/municipios-da-arquidiocese/",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

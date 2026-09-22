@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "noroeste",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-porto-velho",
@@ -44,12 +44,30 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "1100015",
+      "1100049",
+      "1100098",
+      "1100114",
+      "1100122",
+      "1100155",
+      "1100189",
+      "1100254",
+      "1100288",
+      "1100296",
+      "1100304",
+      "1100346",
+      "1101005",
+      "1101203",
+      "1101302",
+      "1101708",
+      "1101807"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
+    "fonte_url": "https://gcatholic.org/churches/local/jipa0",
+    "verificado_em": "2026-09-22",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q870043",

@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "norte-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-palmas",
@@ -44,12 +44,28 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "1701903",
+      "1703107",
+      "1703206",
+      "1705508",
+      "1707207",
+      "1709302",
+      "1710508",
+      "1713205",
+      "1713304",
+      "1716505",
+      "1716653",
+      "1716703",
+      "1718402",
+      "1718881",
+      "1721307"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
+    "fonte_url": "https://gcatholic.org/churches/local/mira0",
+    "verificado_em": "2026-09-22",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q872448",

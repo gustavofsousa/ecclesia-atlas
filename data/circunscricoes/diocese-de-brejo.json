@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-5",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-luis-do-maranhao",
@@ -53,12 +53,16 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2100105", "2100808", "2100907", "2101707", "2102101", "2102200",
+      "2103208", "2103406", "2103901", "2106300", "2106409", "2110104",
+      "2110401", "2110609", "2112506", "2112605"
+    ],
+    "fonte": "wikipedia não lista municípios explicitamente; lista de paróquias obtida em blog paroquial (paroquiadesantanacoelhoneto.blogspot.com), cruzada com tools/ibge-municipios.json — cada paróquia corresponde a sua sede municipal",
+    "fonte_url": "http://paroquiadesantanacoelhoneto.blogspot.com/2011/06/paroquias-da-diocese-de-brejo-ma.html",
+    "verificado_em": "2026-09-18",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867328",

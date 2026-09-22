@@ -54,13 +54,19 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [
-      "5100102", "5101605", "5103403", "5104906", "5105903", "5107701",
-      "5107800", "5108402"
+      "5100102",
+      "5101605",
+      "5103403",
+      "5104906",
+      "5105903",
+      "5107701",
+      "5107800",
+      "5108402"
     ],
-    "fonte": "gcatholic (churches/local/cuia0) cruzado com tools/ibge-municipios.json (corrigida grafia 'Santo Antônio do Leverger' -> Santo Antônio de Leverger); 3 nomes da fonte (Baú, Coxipó, Guia) descartados por não corresponderem a município (bairro/distrito de Cuiabá)",
-    "fonte_url": "https://www.gcatholic.org/churches/local/cuia0",
-    "verificado_em": "2026-09-18",
-    "confianca": "media",
+    "fonte": "pesquisa dirigida (perplexity v2, fonte b)",
+    "fonte_url": "https://arquidiocesecuiaba.org.br/historia-da-arquidiocese/",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

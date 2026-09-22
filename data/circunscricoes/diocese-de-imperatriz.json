@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-5",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-luis-do-maranhao",
@@ -44,12 +44,16 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2100055", "2100600", "2102358", "2103257", "2103752", "2104552",
+      "2105302", "2105427", "2105500", "2110856", "2111532", "2111763",
+      "2112852"
+    ],
+    "fonte": "wikipedia não lista município a município; lista derivada da página oficial 'Paróquias - Cidades' da diocese (diocesedeimperatriz.org.br), que agrupa paróquias por cidade — inferência de igrejas-por-cidade, não declaração territorial explícita. Descartados 'Cacau' e 'Coquelândia' (distritos, sem código IBGE próprio).",
+    "fonte_url": "https://diocesedeimperatriz.org.br/paroquias-cidades/",
+    "verificado_em": "2026-09-18",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q540349",

@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "noroeste",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-porto-velho",
@@ -44,12 +44,15 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "1200203", "1200302", "1200336", "1200393", "1200427", "1200609",
+      "1301407", "1301506", "1301654", "1301803"
+    ],
+    "fonte": "wikipedia — território estende-se pelo Acre (6 municípios) e Amazonas (4 municípios), inferido a partir da lista de paróquias por cidade; cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Cruzeiro_do_Sul",
+    "verificado_em": "2026-09-18",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q868208",

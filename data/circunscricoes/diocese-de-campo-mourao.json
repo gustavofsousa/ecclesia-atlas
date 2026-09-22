@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-maringa",
@@ -44,12 +44,12 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": ["4104303", "4101705", "4102505", "4103008", "4103909", "4106555", "4107504", "4107553", "4107702", "4108601", "4110805", "4112207", "4112959", "4113007", "4113734", "4114005", "4115101", "4116109", "4116802", "4118808", "4120655", "4121109", "4121356", "4122503", "4127205", "4128005"],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json — diocese inclui 26 municípios do estado do Paraná, organizados em 5 decanatos (Campo Mourão, Engenheiro Beltrão, Goioerê, Ubiratã, Iretama)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Campo_Mourão",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867616",

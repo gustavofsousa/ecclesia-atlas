@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-4",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-teresina",
@@ -53,12 +53,12 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": ["2200301", "2201606", "2200400", "2202208", "2202406", "2202604", "2209906", "2205508", "2210409", "2201200", "2208502", "2206803"],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json — bula de erecção cita municípios desmembrados da Arquidiocese de Teresina (Alto Longá, Beneditinos, Altos, Campo Maior, Capitão de Campos, Castelo do Piauí, São João da Serra, José de Freitas, São Miguel do Tapuio) e da Diocese de Parnaíba (Barras, Porto, Nossa Senhora dos Remédios)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Campo_Maior",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867609",

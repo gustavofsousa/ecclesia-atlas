@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-passo-fundo",
@@ -53,12 +53,17 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "4300901", "4301552", "4301701", "4301925", "4302055", "4303806",
+      "4304853", "4306957", "4307005", "4307203", "4307559", "4308706",
+      "4308904", "4310462", "4310702", "4310900", "4311908", "4312005",
+      "4314134", "4315313", "4319703", "4320602", "4321634", "4322905"
+    ],
+    "fonte": "site oficial da diocese (página de paróquias), cruzado com tools/ibge-municipios.json. Wikipédia confirma 'trinta municípios' sem listar nomes; a lista do site oficial retornou 24 municípios distintos (não os 30 totais) — tratado como confiança media por não bater com a contagem da wikipedia",
+    "fonte_url": "https://diocesedeerexim.org.br/paroquias/",
+    "verificado_em": "2026-09-18",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q868689",

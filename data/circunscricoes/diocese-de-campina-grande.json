@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-da-paraiba",
@@ -53,12 +53,19 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2500403", "2500536", "2501203", "2501302", "2501575", "2501609",
+      "2501708", "2502151", "2502508", "2503100", "2504009", "2504074",
+      "2505006", "2505105", "2506004", "2506103", "2506509", "2507705",
+      "2508307", "2509206", "2509701", "2511103", "2511400", "2512408",
+      "2512507", "2513158", "2513851", "2514008", "2515104", "2515500",
+      "2516102", "2516300"
+    ],
+    "fonte": "wikipedia afirma '61 municípios' sem nomeá-los; lista de cidades com igrejas obtida em gcatholic.org (churches/local/camp5) e nomes de municípios confirmados via foranias no site oficial diocesecg.org, cruzados com tools/ibge-municipios.json — igreja-por-cidade é inferência territorial, não declaração explícita. 32 de 61 municípios declarados identificados nominalmente; lista incompleta. Descartados por serem distritos/bairros, não municípios: Galante, São José da Mata (distritos de Campina Grande); 'Estreito' descartado por ser homônimo de município do Maranhão, não da Paraíba; 'Lagoa de Roça' mapeado ao nome oficial 'São Sebastião de Lagoa de Roça'.",
+    "fonte_url": "https://gcatholic.org/churches/local/camp5",
+    "verificado_em": "2026-09-18",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867593",

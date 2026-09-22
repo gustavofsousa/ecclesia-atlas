@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-vitoria-do-espirito-santo",
@@ -44,12 +44,18 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3200201", "3200508", "3200706", "3201100", "3201209", "3201407",
+      "3201704", "3201803", "3202009", "3202306", "3202454", "3202603",
+      "3202652", "3202801", "3203007", "3203106", "3203320", "3203403",
+      "3203700", "3203809", "3204203", "3204302", "3204401", "3204807",
+      "3205036", "3205069"
+    ],
+    "fonte": "wikipedia afirma 'abrange 27 municípios' sem nomeá-los; lista de cidades com igrejas obtida em gcatholic.org (churches/local/cach1), cruzada com tools/ibge-municipios.json — igreja-por-cidade é inferência territorial, não declaração explícita. 26 de 27 municípios declarados identificados.",
+    "fonte_url": "https://gcatholic.org/churches/local/cach1.htm",
+    "verificado_em": "2026-09-18",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q283949",

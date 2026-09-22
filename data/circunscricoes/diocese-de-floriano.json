@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-4",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-teresina",
@@ -53,12 +53,17 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2200806", "2201150", "2201705", "2202251", "2202752", "2203602",
+      "2203800", "2203909", "2204501", "2205102", "2205300", "2205607",
+      "2205904", "2206001", "2206704", "2207850", "2208551", "2208908",
+      "2209005", "2209708", "2210102", "2210631", "2211209"
+    ],
+    "fonte": "busca web (wikidata/gcatholic), 22 municípios nomeados no Piauí; Wikipedia em português não lista o território atual explicitamente",
+    "fonte_url": "https://www.wikidata.org/wiki/Q868863",
+    "verificado_em": "2026-09-18",
+    "confianca": "media",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q868863",
