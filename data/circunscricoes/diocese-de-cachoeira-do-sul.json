@@ -45,13 +45,23 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [
-      "4300109", "4301206", "4302808", "4303004", "4305132", "4309753",
-      "4313391", "4317004", "4320263", "4320701"
+      "4300109",
+      "4301206",
+      "4302808",
+      "4303004",
+      "4305132",
+      "4309753",
+      "4311239",
+      "4313391",
+      "4314068",
+      "4317004",
+      "4320263",
+      "4320701"
     ],
-    "fonte": "wikipedia afirma 'serve 14 municípios' sem nomeá-los; lista de paróquias obtida em divisaodaigreja.com, cruzada com tools/ibge-municipios.json — cada paróquia corresponde a sua sede municipal. Apenas 10 dos 14 municípios declarados foram identificados nominalmente pela fonte disponível; lista provavelmente incompleta.",
-    "fonte_url": "https://divisaodaigreja.com/paroquias/diocese-de-cachoeira-do-sul/",
-    "verificado_em": "2026-09-18",
-    "confianca": "media",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Cachoeira_do_Sul",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

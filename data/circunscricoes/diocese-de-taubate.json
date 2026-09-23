@@ -46,18 +46,21 @@
     "tipo": "municipios_ibge",
     "municipios_ibge": [
       "3508504",
+      "3509700",
       "3524907",
       "3532306",
       "3538006",
       "3542305",
       "3548203",
+      "3548609",
+      "3550001",
       "3554102",
       "3554805"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/taub0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b) — O site oficial enumera as cidades atendidas. São Luiz do Paraitinga foi grafado conforme o nome oficial do município.",
+    "fonte_url": "https://diocesedetaubate.org.br/diocese/",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

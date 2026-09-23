@@ -45,18 +45,18 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [
+      "1301100",
       "1301159",
       "1301852",
       "1302553",
       "1302603",
       "1303205",
-      "1303536",
-      "1303569"
+      "1303536"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/mana1",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Rio Preto da Eva foi descartado porque a própria fonte diz pertencer territorialmente à Prelazia de Itacoatiara, embora administrado por Manaus. Descartados por serem vizinhos/distrito: Rio Preto da Eva.",
+    "fonte_url": "https://es.wikipedia.org/wiki/Arquidi%C3%B3cesis_de_Manaos",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

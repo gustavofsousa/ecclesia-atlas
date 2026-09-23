@@ -53,6 +53,7 @@
       "5004304",
       "5004601",
       "5004700",
+      "5004809",
       "5005103",
       "5005152",
       "5005681",
@@ -64,10 +65,10 @@
       "5007950",
       "5007976"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/navi0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — A página em português declara 20 cidades, mas a lista explícita histórica e a página italiana apresentam 19 municípios; mantida a lista nominal verificável.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Navira%C3%AD",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

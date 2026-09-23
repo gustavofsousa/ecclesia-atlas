@@ -50,6 +50,7 @@
       "4302303",
       "4303202",
       "4303673",
+      "4304622",
       "4304952",
       "4307401",
       "4309803",
@@ -58,8 +59,10 @@
       "4311304",
       "4311700",
       "4312203",
+      "4312377",
       "4312617",
       "4313607",
+      "4314464",
       "4316600",
       "4317954",
       "4318424",
@@ -68,10 +71,10 @@
       "4322186",
       "4322509"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/vaca0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Vacaria",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

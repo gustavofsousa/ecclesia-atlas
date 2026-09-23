@@ -67,10 +67,10 @@
       "2312502",
       "2313104"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/limo0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b) — Morada Nova é coberta parcialmente, conforme a fonte oficial.",
+    "fonte_url": "https://diocesedelimoeirodonorte.org/sobre/",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

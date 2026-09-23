@@ -53,10 +53,10 @@
       "3303609",
       "3304144"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/nova2",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Miguel Pereira está incluído apenas parcialmente: o território diocesano corresponde ao distrito de Conrado. A fonte chama Conrado de distrito, portanto ele não foi tratado como município IBGE. Descartados por serem vizinhos/distrito: Conrado. CONFLITO RESOLVIDO: Miguel Pereira fica no eixo Vassouras/Paty do Alferes, território da Diocese de Valença, não na Baixada Fluminense de Nova Iguaçu.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Nova_Igua%C3%A7u",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

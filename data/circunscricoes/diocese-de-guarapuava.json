@@ -56,7 +56,6 @@
       "4108650",
       "4109401",
       "4110201",
-      "4111407",
       "4113254",
       "4113304",
       "4114500",
@@ -78,10 +77,10 @@
       "4127965",
       "4128658"
     ],
-    "fonte": "gcatholic.org (churches/local/guar2) cruzado com busca web e tools/ibge-municipios.json — wikipedia cita apenas contagem ('31 municípios') sem nomeá-los; igreja-por-cidade é inferência territorial, não declaração explícita. Descartado 'Entre Rios' — confirmado via site oficial da diocese (diopuava.org, paróquia São Miguel Arcanjo) ser distrito (Colônia Vitória) do próprio município de Guarapuava, não município homônimo do Paraná Ocidental.",
-    "fonte_url": "https://www.gcatholic.org/churches/local/guar2",
-    "verificado_em": "2026-09-18",
-    "confianca": "media",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Guarapuava",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

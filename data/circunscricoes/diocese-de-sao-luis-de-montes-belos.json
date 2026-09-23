@@ -82,10 +82,10 @@
       "5221502",
       "5221551"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/zlui4",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Lista explícita de 36 municípios.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_S%C3%A3o_Lu%C3%ADs_de_Montes_Belos",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

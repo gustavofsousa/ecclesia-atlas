@@ -47,18 +47,16 @@
     "municipios_ibge": [
       "3300951",
       "3302908",
-      "3303708",
       "3303856",
       "3304508",
       "3305406",
-      "3306008",
       "3306107",
       "3306206"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/vale2",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Miguel Pereira está incluído apenas parcialmente. CONFLITO RESOLVIDO: Paraíba do Sul mantido na Diocese de Petrópolis, cuja fonte é o site oficial da própria diocese descrevendo limites com precisão de distrito (Inconfidência/Sebollas). CONFLITO RESOLVIDO: Três Rios mantido na Diocese de Petrópolis, mesma razão de fonte primária oficial (distrito de Bemposta identificado).",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Valen%C3%A7a",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

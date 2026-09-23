@@ -47,14 +47,18 @@
     "municipios_ibge": [
       "3100609",
       "3108800",
+      "3112059",
+      "3113800",
       "3116803",
       "3117504",
       "3122207",
       "3122603",
       "3123106",
       "3125903",
+      "3126950",
       "3128006",
       "3136108",
+      "3136553",
       "3140605",
       "3143708",
       "3148400",
@@ -70,10 +74,10 @@
       "3166105",
       "3171808"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/guan1",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Guanh%C3%A3es",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

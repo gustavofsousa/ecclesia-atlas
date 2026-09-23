@@ -45,14 +45,29 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [
-      "5100508", "5101308", "5102637", "5103452", "5103502", "5104526",
-      "5104542", "5105259", "5106000", "5106224", "5107263", "5107305",
-      "5107768", "5107875", "5107958", "5108006", "5108857", "5108907"
+      "5100508",
+      "5101308",
+      "5102637",
+      "5103452",
+      "5103502",
+      "5104526",
+      "5104542",
+      "5105259",
+      "5106000",
+      "5106224",
+      "5107263",
+      "5107305",
+      "5107768",
+      "5107875",
+      "5107958",
+      "5108006",
+      "5108857",
+      "5108907"
     ],
-    "fonte": "wikipedia (paróquias/foranias) cruzado com busca web (18 municípios, batendo com as 18 paróquias citadas) e tools/ibge-municipios.json",
-    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Diamantino",
-    "verificado_em": "2026-09-18",
-    "confianca": "media",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Diamantino",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

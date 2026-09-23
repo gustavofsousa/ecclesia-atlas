@@ -46,20 +46,24 @@
     "tipo": "municipios_ibge",
     "municipios_ibge": [
       "3104502",
+      "3108206",
+      "3108552",
       "3109303",
       "3109451",
       "3122470",
       "3126208",
       "3128600",
       "3136306",
+      "3144375",
       "3147006",
       "3170404",
+      "3170479",
       "3171006"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/para3",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — A página da própria diocese distribui explicitamente os 14 municípios entre seis foranias.",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Paracatu",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

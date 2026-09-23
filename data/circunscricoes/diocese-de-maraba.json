@@ -50,6 +50,7 @@
       "1501758",
       "1502152",
       "1502772",
+      "1502954",
       "1503093",
       "1503705",
       "1503804",
@@ -60,10 +61,10 @@
       "1507151",
       "1507508"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/mara1",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b) — Os três nomes descartados têm apenas algumas comunidades atendidas pastoralmente, segundo o site oficial; não foram tratados como municípios integralmente territoriais. Descartados por serem vizinhos/distrito: Tucuruí, Novo Repartimento, São Félix do Xingu.",
+    "fonte_url": "https://diocesedemaraba.com.br/institucional/nossa-historia/",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

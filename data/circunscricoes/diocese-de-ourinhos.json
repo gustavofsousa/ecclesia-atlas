@@ -56,7 +56,6 @@
     "municipios_ibge": [
       "3501509",
       "3506300",
-      "3509809",
       "3510153",
       "3515194",
       "3515400",
@@ -79,10 +78,10 @@
       "3555505",
       "3557204"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/ouri0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — A fonte explícita atual consultada enumera 23 municípios. Campos Novos Paulista aparece em relação secundária antiga, mas foi omitido por não constar na lista explícita usada. Descartados por serem vizinhos/distrito: Campos Novos Paulista.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Ourinhos",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

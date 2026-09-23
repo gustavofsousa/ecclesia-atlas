@@ -50,10 +50,10 @@
       "1303106",
       "1303304"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/borb0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Axinim, Canumã e Novo Céu foram explicitamente tratados como distritos, não municípios. A circunscrição foi posteriormente elevada de prelazia a diocese, mas o id solicitado foi preservado. Descartados por serem vizinhos/distrito: Axinim, Canumã, Novo Céu.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Prelatura_territoriale_di_Borba",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

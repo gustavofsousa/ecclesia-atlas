@@ -78,14 +78,15 @@
       "3544707",
       "3545100",
       "3547106",
+      "3549300",
       "3555000",
       "3555109",
       "3556602"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/mari4",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b) — Distritos listados separadamente pelo site oficial foram excluídos. Amadeu Amaral é distrito e o próprio site o atribui canonicamente à Diocese de Assis. Descartados por serem vizinhos/distrito: Jafa, Avencas, Dirceu, Lácio, Padre Nóbrega, Rosália, Novo Cravinhos, Paulópolis, Juliânia, Parnaso, Varpa, Universo, Anápolis, Lagoa Azul, Mourão, Atlântida, Iandaiá, Jaciporã, Jamaica, Oásis, Arabela, Amadeu Amaral.",
+    "fonte_url": "https://diocesedemarilia.com.br/diocese/nossa-historia/informacoes-gerais/",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

@@ -71,10 +71,10 @@
       "3165305",
       "3168804"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/zjoa2",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b) — O site oficial enumera os 25 municípios.",
+    "fonte_url": "https://diocesedesaojoaodelrei.com.br/historico-da-diocese/",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

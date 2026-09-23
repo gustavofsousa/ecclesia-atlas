@@ -50,6 +50,7 @@
       "3504206",
       "3513850",
       "3514205",
+      "3515202",
       "3515509",
       "3516903",
       "3518008",
@@ -86,13 +87,14 @@
       "3552304",
       "3552551",
       "3554904",
+      "3555307",
       "3555802",
       "3556958"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/jale0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Jales",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

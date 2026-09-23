@@ -52,6 +52,7 @@
       "3107406",
       "3111507",
       "3112802",
+      "3115607",
       "3119807",
       "3119955",
       "3123205",
@@ -72,12 +73,16 @@
       "3153004",
       "3153707",
       "3159704",
-      "3160405"
+      "3160405",
+      "3164308",
+      "3166600",
+      "3168200",
+      "3170602"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/luzz0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b)",
+    "fonte_url": "https://diocesedeluz.org.br/historia-da-diocese/",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

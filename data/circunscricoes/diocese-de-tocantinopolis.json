@@ -60,6 +60,7 @@
       "1712454",
       "1712801",
       "1713809",
+      "1714302",
       "1718303",
       "1718550",
       "1718808",
@@ -70,10 +71,10 @@
       "1720804",
       "1721208"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/toca0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — CONFLITO RESOLVIDO: Itapiratins pertence ao cluster geográfico de Miracema do Tocantins (vizinho de Tupirama/Tupiratins/Rio dos Bois), não à região norte de Tocantinópolis.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Tocantin%C3%B3polis",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

@@ -54,10 +54,10 @@
       "5105176",
       "5107578"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/juin0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Conflito a revisar: Rondolândia também consta na fonte oficial da Diocese de Ji-Paraná. Mantido aqui porque a Wikipédia a lista explicitamente no território de Juína.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Ju%C3%ADna",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

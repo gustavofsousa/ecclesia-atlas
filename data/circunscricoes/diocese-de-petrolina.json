@@ -48,16 +48,15 @@
       "2600203",
       "2605152",
       "2608750",
-      "2609808",
       "2611101",
       "2612455",
       "2612554",
       "2612604"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte c) — Granito foi excluído porque a bula publicada no site oficial da Diocese de Salgueiro informa expressamente que o município foi desmembrado de Petrolina para formar Salgueiro. A Wikipédia italiana ainda o inclui e aparenta estar desatualizada. Descartados por serem vizinhos/distrito: Granito.",
     "fonte_url": "https://gcatholic.org/churches/local/petr1",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

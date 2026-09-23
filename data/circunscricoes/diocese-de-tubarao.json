@@ -56,17 +56,19 @@
       "4209409",
       "4211702",
       "4212403",
+      "4212650",
       "4214904",
       "4215455",
+      "4215604",
       "4217006",
       "4217105",
       "4218400",
       "4218707"
     ],
-    "fonte": "gcatholic (proxy cidades com igreja catalogada), cruzado com tools/ibge-municipios.json (removido — conflito com diocese-de-criciuma (confianca alta, wikipedia), que tem fonte mais forte)",
-    "fonte_url": "https://gcatholic.org/churches/local/tuba0-n",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Grão-Pará foi normalizado para a grafia oficial IBGE.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Tubar%C3%A3o",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

@@ -55,13 +55,14 @@
       "3525003",
       "3528403",
       "3534401",
+      "3550308",
       "3550605",
       "3556453"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/osas0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b) — São Paulo está incluído apenas parcialmente. O site oficial declara doze municípios integralmente identificados e uma pequena área da capital.",
+    "fonte_url": "https://diocesedeosasco.com.br/area-geografica/",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

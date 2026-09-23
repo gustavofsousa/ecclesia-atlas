@@ -70,6 +70,7 @@
       "2511509",
       "2511905",
       "2512721",
+      "2512754",
       "2512762",
       "2512903",
       "2513109",
@@ -79,10 +80,10 @@
       "2515302",
       "2515807"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/para0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Lista explícita de 34 municípios; grafia validada contra o IBGE.",
+    "fonte_url": "https://es.wikipedia.org/wiki/Arquidi%C3%B3cesis_de_Para%C3%ADba",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

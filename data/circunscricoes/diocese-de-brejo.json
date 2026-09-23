@@ -54,14 +54,27 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [
-      "2100105", "2100808", "2100907", "2101707", "2102101", "2102200",
-      "2103208", "2103406", "2103901", "2106300", "2106409", "2110104",
-      "2110401", "2110609", "2112506", "2112605"
+      "2100105",
+      "2100808",
+      "2100907",
+      "2101707",
+      "2102101",
+      "2102200",
+      "2103208",
+      "2103406",
+      "2103901",
+      "2106300",
+      "2106409",
+      "2110104",
+      "2110401",
+      "2110609",
+      "2112506",
+      "2112605"
     ],
-    "fonte": "wikipedia não lista municípios explicitamente; lista de paróquias obtida em blog paroquial (paroquiadesantanacoelhoneto.blogspot.com), cruzada com tools/ibge-municipios.json — cada paróquia corresponde a sua sede municipal",
-    "fonte_url": "http://paroquiadesantanacoelhoneto.blogspot.com/2011/06/paroquias-da-diocese-de-brejo-ma.html",
-    "verificado_em": "2026-09-18",
-    "confianca": "media",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Brejo",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

@@ -59,10 +59,10 @@
       "3549607",
       "3552007"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/lore0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Cunha foi mantido: a fonte territorial o lista explicitamente e o IBGE confirma município paulista do Vale do Paraíba. CONFLITO RESOLVIDO: Campos Novos Paulista pertence ao cluster Marília/Ourinhos (oeste de SP), geograficamente distante do Vale do Paraíba de Lorena; a própria pesquisa de Ourinhos já identifica e descarta essa duplicidade.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Lorena",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

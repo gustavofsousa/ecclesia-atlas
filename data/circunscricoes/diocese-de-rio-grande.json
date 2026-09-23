@@ -45,15 +45,17 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [
+      "4305439",
       "4312500",
       "4315602",
       "4317301",
-      "4318507"
+      "4318507",
+      "4321352"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/riog1",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b) — O site oficial enumera os seis municípios.",
+    "fonte_url": "https://www.diocesedoriogrande.com.br/institucional",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

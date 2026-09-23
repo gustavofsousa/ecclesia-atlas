@@ -4,9 +4,9 @@
 
 *Open, versioned, field-sourced dataset of the Catholic Church's ecclesiastical structure in Brazil.*
 
-**Status:** rumo ao `v0.2.0` (ainda não lançado — ver [ROADMAP.md](ROADMAP.md)) — 266 circunscrições (215 dioceses + 48 arquidioceses + 3 prelazias territoriais), com regional CNBB, província eclesiástica e **território municipal completo** (5.027 códigos IBGE, 163 circunscrições em confiança alta / 102 em média). Boa Vista (prelazia) segue sem território, fora de escopo por ora. Repositório pessoal por enquanto; migra para uma organização quando houver contribuidores de fora.
+**Status:** rumo ao `v0.2.0` (ainda não lançado — ver [ROADMAP.md](ROADMAP.md)) — 266 circunscrições (215 dioceses + 48 arquidioceses + 3 prelazias territoriais), com regional CNBB, província eclesiástica e **território municipal completo** (5.328 códigos IBGE, 264 circunscrições em confiança alta / 1 em média / 1 em baixa). Boa Vista (prelazia) segue sem território, fora de escopo por ora. Repositório pessoal por enquanto; migra para uma organização quando houver contribuidores de fora.
 
-*Heading toward `v0.2.0` (not yet released — see [ROADMAP.md](ROADMAP.md)) — 266 ecclesiastical circumscriptions (215 dioceses + 48 archdioceses + 3 territorial prelatures), each with CNBB region, ecclesiastical province, and **complete municipal territory** (5,027 IBGE municipality codes, 163 circumscriptions at high confidence / 102 at medium). Boa Vista (prelature) still lacks territory, out of scope for now. Personal repo for now; migrates to an org once outside contributors show up.*
+*Heading toward `v0.2.0` (not yet released — see [ROADMAP.md](ROADMAP.md)) — 266 ecclesiastical circumscriptions (215 dioceses + 48 archdioceses + 3 territorial prelatures), each with CNBB region, ecclesiastical province, and **complete municipal territory** (5,328 IBGE municipality codes, 264 circumscriptions at high confidence / 1 at medium / 1 at low). Boa Vista (prelature) still lacks territory, out of scope for now. Personal repo for now; migrates to an org once outside contributors show up.*
 
 ## Por que isto existe
 

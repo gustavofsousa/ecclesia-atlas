@@ -61,10 +61,10 @@
       "2615607",
       "2616100"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/salg0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b) — A bula publicada pelo site oficial enumera os 15 municípios e indica a diocese de origem de cada território.",
+    "fonte_url": "https://diocesedesalgueiro.org.br/bula-de-criacao-da-diocese/",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

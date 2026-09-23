@@ -68,10 +68,10 @@
       "2112803",
       "2112902"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/vian0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Lista explícita de 22 municípios.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Viana_(Brasile)",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

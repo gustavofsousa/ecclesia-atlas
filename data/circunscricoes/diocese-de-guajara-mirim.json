@@ -51,16 +51,15 @@
       "1100072",
       "1100080",
       "1100106",
-      "1100320",
       "1100338",
       "1101468",
       "1101492",
       "1101500"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/guaj0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — A fonte afirma que os dois nomes descartados pertencem territorialmente a Guajará-Mirim, mas são administrados correntemente pela Diocese de Ji-Paraná; excluídos para evitar dupla atribuição. Descartados por serem vizinhos/distrito: Alta Floresta D'Oeste, Alto Alegre dos Parecis.",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Guajar%C3%A1-Mirim",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

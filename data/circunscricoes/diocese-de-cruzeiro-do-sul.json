@@ -45,13 +45,22 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [
-      "1200203", "1200302", "1200336", "1200393", "1200427", "1200609",
-      "1301407", "1301506", "1301654", "1301803"
+      "1200203",
+      "1200302",
+      "1200328",
+      "1200336",
+      "1200351",
+      "1200393",
+      "1200427",
+      "1200609",
+      "1301407",
+      "1301506",
+      "1301654"
     ],
-    "fonte": "wikipedia — território estende-se pelo Acre (6 municípios) e Amazonas (4 municípios), inferido a partir da lista de paróquias por cidade; cruzado com tools/ibge-municipios.json",
-    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Cruzeiro_do_Sul",
-    "verificado_em": "2026-09-18",
-    "confianca": "media",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Cruzeiro_do_Sul",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

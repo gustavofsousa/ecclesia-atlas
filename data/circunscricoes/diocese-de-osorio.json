@@ -48,9 +48,13 @@
       "4301057",
       "4301636",
       "4304630",
+      "4304671",
       "4304713",
       "4305454",
       "4306551",
+      "4310330",
+      "4310652",
+      "4311734",
       "4311775",
       "4312443",
       "4313508",
@@ -63,10 +67,10 @@
       "4321832",
       "4323804"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/osor0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Lista explícita de 21 municípios.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Os%C3%B3rio",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

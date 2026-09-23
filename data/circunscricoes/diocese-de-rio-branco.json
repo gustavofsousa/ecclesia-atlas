@@ -44,11 +44,27 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF. Nenhum município pôde ser confirmado nominalmente na fonte disponível.",
-    "fonte_url": "https://gcatholic.org/churches/local/riob0",
+    "municipios_ibge": [
+      "1200013",
+      "1200054",
+      "1200104",
+      "1200138",
+      "1200179",
+      "1200252",
+      "1200344",
+      "1200385",
+      "1200401",
+      "1200435",
+      "1200450",
+      "1200500",
+      "1200708",
+      "1200807",
+      "1300706"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b) — Território vazio recuperado por lista oficial de paróquias e respectivas localidades. Porto Velho está incluído apenas parcialmente, por causa da paróquia de Extrema, distrito de Porto Velho. Rodrigues Alves e Tarauacá constam numa lista da Wikipédia italiana, mas não na estrutura paroquial oficial atual e foram descartados. Descartados por serem vizinhos/distrito: Extrema, Nova Califórnia, Transacreana, Vila Campinas, Vila Caquetá, Vila Nova Aldeia, Rodrigues Alves, Tarauacá. CONFLITO RESOLVIDO: Porto Velho é sede da Arquidiocese de Porto Velho (fonte alta, Wikipédia específica); Rio Branco o listava apenas por causa do distrito de Extrema.",
+    "fonte_url": "http://www.diocesederiobranco.org.br/nossas-paroquias",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

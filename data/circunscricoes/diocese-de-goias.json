@@ -69,10 +69,10 @@
       "5221007",
       "5221700"
     ],
-    "fonte": "gcatholic.org (churches/local/goia1) cruzado com busca web e tools/ibge-municipios.json — wikipedia não lista município nominalmente; igreja-por-cidade é inferência territorial, não declaração explícita",
-    "fonte_url": "https://www.gcatholic.org/churches/local/goia1",
-    "verificado_em": "2026-09-18",
-    "confianca": "media",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Goi%C3%A1s",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

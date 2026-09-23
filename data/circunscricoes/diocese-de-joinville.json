@@ -64,10 +64,10 @@
       "4216354",
       "4217402"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/join0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — A circunscrição foi elevada a arquidiocese em 2024; mantido o id solicitado.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Joinville",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

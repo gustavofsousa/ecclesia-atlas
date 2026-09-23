@@ -64,14 +64,15 @@
       "2920403",
       "2920502",
       "2920809",
+      "2921450",
       "2922805",
       "2924900",
       "2927903"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/jequ0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — CONFLITO RESOLVIDO: Ubaíra pertence ao cluster Recôncavo/Baixo Sul da Diocese de Amargosa (fonte alta, Wikipédia específica da diocese), não a Jequié.",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Jequi%C3%A9",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

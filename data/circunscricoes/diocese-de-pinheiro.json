@@ -62,13 +62,12 @@
       "2109809",
       "2110500",
       "2111789",
-      "2112407",
       "2112456"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/pinh0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Lista parcial explícita de 18 municípios. Turiaçu aparece numa referência histórica de incorporação territorial, mas não na lista municipal atual da fonte usada e foi mantido fora para evitar extrapolação. Descartados por serem vizinhos/distrito: Turiaçu.",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Pinheiro",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

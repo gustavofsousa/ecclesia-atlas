@@ -66,10 +66,10 @@
       "2111029",
       "2114007"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/zedo0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — A fonte diz inicialmente 20 municípios e enumera 20 localidades municipais, embora uma frase intermediária mencione equivocadamente 19.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Z%C3%A9_Doca",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

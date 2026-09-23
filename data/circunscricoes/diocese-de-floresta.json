@@ -54,13 +54,22 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [
-      "2601607", "2601805", "2603926", "2605103", "2605707", "2606606",
-      "2607000", "2607406", "2608057", "2611002", "2614808"
+      "2601607",
+      "2601805",
+      "2603926",
+      "2605103",
+      "2605707",
+      "2606606",
+      "2607000",
+      "2607406",
+      "2608057",
+      "2611002",
+      "2614808"
     ],
-    "fonte": "gcatholic.org (lista de igrejas por cidade, 11 municípios), corroborado por busca web independente citando os mesmos 11 municípios; Wikipedia não lista território atual. Município 'Manari' aparecia no site oficial da diocese (wordpress) mas não foi corroborado por nenhuma outra fonte — descartado por falta de confirmação cruzada",
-    "fonte_url": "https://gcatholic.org/churches/local/flor2",
-    "verificado_em": "2026-09-18",
-    "confianca": "media",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Floresta",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

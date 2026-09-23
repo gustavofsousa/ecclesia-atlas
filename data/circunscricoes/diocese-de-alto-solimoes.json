@@ -37,13 +37,18 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [
-      "1300060", "1300201", "1300607", "1303700", "1303908", "1304062",
+      "1300060",
+      "1300201",
+      "1300607",
+      "1303700",
+      "1303908",
+      "1304062",
       "1304237"
     ],
-    "fonte": "wikipedia não tinha lista completa; confirmado via busca cruzando gcatholic.org e outras fontes secundárias — 7 municípios: Amaturá, Atalaia do Norte, Benjamin Constant, Santo Antônio do Içá, São Paulo de Olivença, Tabatinga, Tonantins. Cruzado com tools/ibge-municipios.json",
-    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Alto_Solimões",
-    "verificado_em": "2026-09-18",
-    "confianca": "media",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte c) — Não foi localizada lista explícita de municípios em Wikipédia ou site oficial; mantido fallback GCatholic. Belém do Solimões é distrito de Tabatinga. Descartados por serem vizinhos/distrito: Belém do Solimões.",
+    "fonte_url": "https://www.gcatholic.org/churches/local/alto2",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

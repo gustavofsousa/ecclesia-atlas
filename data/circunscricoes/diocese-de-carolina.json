@@ -53,11 +53,21 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": ["2102804", "2104057", "2109007"],
-    "fonte": "wikipedia e site oficial não trazem lista territorial explícita; usado fallback GCatholic (churches by city), que lista igrejas/paróquias em Carolina, Estreito e Porto Franco — confiança média por ser inferência de igrejas→município, não declaração territorial explícita. Descartado 'São João das Cachoeiras', citado no site oficial da diocese, sem correspondência em tools/ibge-municipios.json (provável localidade/comunidade, não município)",
-    "fonte_url": "https://gcatholic.org/churches/local/caro0",
-    "verificado_em": "2026-09-18",
-    "confianca": "media",
+    "municipios_ibge": [
+      "2102556",
+      "2102804",
+      "2104057",
+      "2105989",
+      "2107001",
+      "2109007",
+      "2109551",
+      "2111052",
+      "2111573"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Carolina",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

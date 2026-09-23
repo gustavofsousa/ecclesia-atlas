@@ -48,14 +48,16 @@
       "3300225",
       "3301850",
       "3302502",
+      "3303708",
       "3303906",
       "3305158",
-      "3305802"
+      "3305802",
+      "3306008"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/petr2",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b) — Paraíba do Sul e Três Rios são apenas parciais. A fonte identifica os distritos de Inconfidência/Sebollas, em Paraíba do Sul, e Bemposta, em Três Rios. Descartados por serem vizinhos/distrito: Bemposta, Inconfidência, Sebollas.",
+    "fonte_url": "https://diocesepetropolis.com.br/historia/limites-da-diocese/",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

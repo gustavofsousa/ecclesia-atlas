@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "municipio",
+  "granularidade_territorial": "submunicipal",
   "regional_cnbb": "sul-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-paulo",
@@ -45,10 +45,10 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/zmig2",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Território vazio recuperado. A diocese está inteiramente dentro do município de São Paulo, abrangendo apenas parte da Zona Leste. Regiões, setores, bairros e distritos não foram promovidos a municípios. Descartados por serem vizinhos/distrito: Artur Alvim, Cangaíba, Cidade Líder, Cidade Tiradentes, Ermelino Matarazzo, Guaianases, Itaim Paulista, Itaquera, Jardim Helena, Penha, Ponte Rasa, São Miguel Paulista, Vila Esperança. CONFLITO RESOLVIDO: Diocese sub-municipal (enclave na Zona Leste da capital paulistana); código do município fica só em Osasco para não duplicar São Paulo. Ver granularidade_territorial=submunicipal.",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_S%C3%A3o_Miguel_Paulista",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

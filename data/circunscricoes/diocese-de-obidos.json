@@ -46,17 +46,15 @@
     "tipo": "municipios_ibge",
     "municipios_ibge": [
       "1500404",
-      "1502855",
       "1503002",
       "1503903",
       "1505106",
-      "1505304",
-      "1507979"
+      "1505304"
     ],
-    "fonte": "pesquisa dirigida (perplexity v2, fonte c) — Lista inferida das cidades com igrejas catalogadas no GCatholic; pode ser parcial. Foram retidos apenas nomes que coincidem com município oficial do IBGE na UF.",
-    "fonte_url": "https://gcatholic.org/churches/local/obid0",
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_%C3%93bidos",
     "verificado_em": "2026-09-22",
-    "confianca": "media",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {
