@@ -65,7 +65,7 @@ O repositório é público; cada circunscrição é um arquivo JSON. Sem instala
 curl -s https://cdn.jsdelivr.net/gh/gustavofsousa/ecclesia-atlas@main/data/circunscricoes/arquidiocese-de-sao-salvador-da-bahia.json
 
 # ou direto do GitHub (raw)
-curl -s https://raw.githubusercontent.com/gustavofsousa/ecclesia-atlas/main/data/circunscricoes/ordinariado-militar-do-brasil.json
+curl -s https://raw.githubusercontent.com/gustavofsousa/ecclesia-atlas/main/data/circunscricoes/prelazia-de-borba.json
 ```
 
 ```js
@@ -86,7 +86,7 @@ The repo is public; each circumscription is one JSON file. No install required:
 curl -s https://cdn.jsdelivr.net/gh/gustavofsousa/ecclesia-atlas@main/data/circunscricoes/arquidiocese-de-sao-salvador-da-bahia.json
 
 # or straight from GitHub (raw)
-curl -s https://raw.githubusercontent.com/gustavofsousa/ecclesia-atlas/main/data/circunscricoes/ordinariado-militar-do-brasil.json
+curl -s https://raw.githubusercontent.com/gustavofsousa/ecclesia-atlas/main/data/circunscricoes/prelazia-de-borba.json
 ```
 
 ```js
