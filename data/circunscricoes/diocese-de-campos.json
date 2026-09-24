@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-niteroi",
@@ -44,12 +44,30 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3300159",
+      "3300605",
+      "3300902",
+      "3301009",
+      "3301157",
+      "3302056",
+      "3302205",
+      "3302304",
+      "3303005",
+      "3303104",
+      "3304102",
+      "3304706",
+      "3304755",
+      "3304805",
+      "3305000",
+      "3305133",
+      "3306156"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Campos",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867624",

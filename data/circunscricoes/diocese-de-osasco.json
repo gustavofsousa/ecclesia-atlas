@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-paulo",
@@ -44,12 +44,26 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3501152",
+      "3502754",
+      "3505708",
+      "3510609",
+      "3513009",
+      "3519709",
+      "3522505",
+      "3525003",
+      "3528403",
+      "3534401",
+      "3550308",
+      "3550605",
+      "3556453"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b) — São Paulo está incluído apenas parcialmente. O site oficial declara doze municípios integralmente identificados e uma pequena área da capital.",
+    "fonte_url": "https://diocesedeosasco.com.br/area-geografica/",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q390166",

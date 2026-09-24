@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-salvador-da-bahia",
@@ -36,11 +36,11 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
+    "municipios_ibge": ["2916104", "2919207", "2927309", "2927408", "2933208"],
+    "fonte": "wikipedia (seção Território — já reduzido pela criação das dioceses de Camaçari em 2010 e Cruz das Almas em 2017), cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Arquidiocese_de_São_Salvador_da_Bahia",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
     "metodo": "manual"
   },
   "crosswalk": {

@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-campinas",
@@ -44,12 +44,28 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3505203",
+      "3505302",
+      "3506805",
+      "3507407",
+      "3507902",
+      "3514106",
+      "3519600",
+      "3522000",
+      "3522703",
+      "3522901",
+      "3525300",
+      "3529807",
+      "3532900",
+      "3552700",
+      "3554706"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v2, fonte a)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Jaú",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q126910890",

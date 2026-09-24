@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-ribeirao-preto",
@@ -44,12 +44,17 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3501004", "3505906", "3507803", "3509403", "3510906", "3513108",
+      "3514601", "3518859", "3525102", "3527603", "3540200", "3543402",
+      "3546256", "3547502", "3547601", "3547908", "3550902", "3551405",
+      "3551504", "3551702"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json (Luiz Antônio grafado 'Luís Antônio' no IBGE)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Arquidiocese_de_Ribeirão_Preto",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q1365414",

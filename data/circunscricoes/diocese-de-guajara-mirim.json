@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "noroeste",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-porto-velho",
@@ -44,12 +44,23 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "1100031",
+      "1100056",
+      "1100064",
+      "1100072",
+      "1100080",
+      "1100106",
+      "1100338",
+      "1101468",
+      "1101492",
+      "1101500"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — A fonte afirma que os dois nomes descartados pertencem territorialmente a Guajará-Mirim, mas são administrados correntemente pela Diocese de Ji-Paraná; excluídos para evitar dupla atribuição. Descartados por serem vizinhos/distrito: Alta Floresta D'Oeste, Alto Alegre dos Parecis.",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Guajar%C3%A1-Mirim",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q869256",

@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-5",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-luis-do-maranhao",
@@ -44,12 +44,31 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2100204",
+      "2100832",
+      "2101301",
+      "2101905",
+      "2103109",
+      "2103125",
+      "2103703",
+      "2104909",
+      "2106805",
+      "2107605",
+      "2108405",
+      "2108603",
+      "2109056",
+      "2109270",
+      "2109809",
+      "2110500",
+      "2111789",
+      "2112456"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Lista parcial explícita de 18 municípios. Turiaçu aparece numa referência histórica de incorporação territorial, mas não na lista municipal atual da fonte usada e foi mantido fora para evitar extrapolação. Descartados por serem vizinhos/distrito: Turiaçu.",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Pinheiro",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q874260",

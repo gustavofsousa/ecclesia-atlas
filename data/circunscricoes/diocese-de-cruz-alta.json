@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-santa-maria",
@@ -44,12 +44,19 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "4300208", "4300554", "4301503", "4302006", "4302220", "4302238",
+      "4302584", "4304101", "4305306", "4305702", "4305871", "4306106",
+      "4307500", "4307815", "4308300", "4308458", "4309951", "4310009",
+      "4310207", "4310876", "4311155", "4311254", "4312427", "4313334",
+      "4313904", "4314308", "4315354", "4316436", "4316451", "4316709",
+      "4318465", "4320800", "4322152"
+    ],
+    "fonte": "wikipedia (município citado como 'Doutor Bozano' corrigido para nome oficial IBGE 'Bozano'), cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Cruz_Alta",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q176888",

@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-vitoria-da-conquista",
@@ -44,12 +44,19 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2902005", "2904100", "2904209", "2904605", "2905008", "2905206",
+      "2906600", "2906899", "2907558", "2908705", "2909000", "2911659",
+      "2911709", "2912004", "2913408", "2917334", "2917409", "2918753",
+      "2919405", "2919801", "2919959", "2920205", "2920304", "2921054",
+      "2921807", "2923407", "2924504", "2924702", "2925709", "2926400",
+      "2926806", "2930006", "2931053", "2931806", "2932606"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json. Nota: fonte citava 'Ibitira', que é distrito do município de Rio do Antônio (já incluso na lista) — descartado por não ser município próprio.",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Caetité",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867520",

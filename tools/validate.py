@@ -5,6 +5,8 @@ Also runs the domain invariants the JSON Schema can't express on its own:
   - a 'pessoal' jurisdiction must have territorio.tipo == 'sem_territorio'
   - id must equal the file stem (slugs are stable, files are named by them)
   - ids and wikidata_qids are unique across the dataset
+  - every municipios_ibge code exists in tools/ibge-municipios.json
+  - no municipality is claimed by more than one circunscrição
 
 Exit code is non-zero on any failure, so it doubles as the CI gate.
 """
@@ -20,6 +22,7 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMA = ROOT / "schema" / "circunscricao.schema.json"
 DATA = ROOT / "data" / "circunscricoes"
+IBGE_MUNICIPIOS = ROOT / "tools" / "ibge-municipios.json"
 
 
 def main() -> int:
@@ -29,10 +32,15 @@ def main() -> int:
         print("no data files found", file=sys.stderr)
         return 1
 
+    ibge_codigos = {
+        m["codigo_ibge"] for m in json.loads(IBGE_MUNICIPIOS.read_text(encoding="utf-8"))
+    }
+
     errors: list[str] = []
     ids: Counter[str] = Counter()
     qids: Counter[str] = Counter()
     gcatholic: Counter[str] = Counter()
+    municipio_dono: dict[str, str] = {}
 
     for f in files:
         data = json.loads(f.read_text(encoding="utf-8"))
@@ -55,6 +63,18 @@ def main() -> int:
             qids[cw["wikidata_qid"]] += 1
         if cw.get("gcatholic_id"):
             gcatholic[cw["gcatholic_id"]] += 1
+
+        terr = data.get("territorio") or {}
+        for codigo in terr.get("municipios_ibge", []):
+            if codigo not in ibge_codigos:
+                errors.append(f"{f.name}: municipio_ibge '{codigo}' não existe na "
+                              f"referência IBGE (tools/ibge-municipios.json)")
+            dono_atual = municipio_dono.get(codigo)
+            if dono_atual and dono_atual != data.get("id"):
+                errors.append(f"{f.name}: municipio_ibge '{codigo}' já pertence a "
+                              f"'{dono_atual}' — um município não pode estar em "
+                              f"duas circunscrições")
+            municipio_dono[codigo] = data.get("id")
 
     for dup, n in ids.items():
         if n > 1:

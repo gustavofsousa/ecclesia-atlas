@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-uberaba",
@@ -44,12 +44,33 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3100708",
+      "3104007",
+      "3111408",
+      "3116902",
+      "3117306",
+      "3118205",
+      "3121258",
+      "3127008",
+      "3127107",
+      "3145000",
+      "3149200",
+      "3150703",
+      "3151602",
+      "3152808",
+      "3156403",
+      "3156908",
+      "3157708",
+      "3168101",
+      "3170107",
+      "3171105"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Aparecida de Minas e Ponte Alta aparecem no filtro de cidades do site oficial, mas são distritos; foram excluídos. Descartados por serem vizinhos/distrito: Aparecida de Minas, Ponte Alta.",
+    "fonte_url": "https://es.wikipedia.org/wiki/Arquidi%C3%B3cesis_de_Uberaba",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q743847",

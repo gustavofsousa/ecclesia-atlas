@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "oeste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-cuiaba",
@@ -44,12 +44,26 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "5100300",
+      "5100409",
+      "5100607",
+      "5103601",
+      "5104203",
+      "5104609",
+      "5104807",
+      "5105200",
+      "5106372",
+      "5107297",
+      "5107404",
+      "5107602",
+      "5108105"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v2, fonte a)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Rondon%C3%B3polis-Guiratinga",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q875063",
