@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-4",
   "provincia_eclesiastica": {
     "id": "diocese-de-joinville",
@@ -44,12 +44,16 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "4202206", "4202404", "4205159", "4205902", "4207106", "4207502",
+      "4210001", "4211306", "4212502", "4212809", "4213203", "4214706",
+      "4218202"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json ('Piçarras' identificado como Balneário Piçarras, nome oficial IBGE)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Blumenau",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q142459",

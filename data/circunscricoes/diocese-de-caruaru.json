@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-olinda-e-recife",
@@ -44,12 +44,12 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": ["2604106", "2600302", "2600807", "2606705", "2601300", "2601904", "2602308", "2603108", "2603504", "2604502", "2606408", "2611705", "2612000", "2612505", "2613107", "2613305", "2614709", "2615003", "2615409"],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json — 19 municípios do estado de Pernambuco. 'São Caetano' citado pela wikipedia corresponde a 'São Caitano' na grafia oficial do IBGE",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Caruaru",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867688",

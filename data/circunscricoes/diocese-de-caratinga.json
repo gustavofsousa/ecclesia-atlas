@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-mariana",
@@ -44,12 +44,20 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3102050", "3102209", "3107802", "3109253", "3110103", "3112109", "3112901",
+      "3113305", "3113404", "3116001", "3117405", "3120003", "3122009", "3122504", "3123528",
+      "3123858", "3124203", "3125309", "3125952", "3129301", "3130556", "3130903", "3131158",
+      "3131208", "3137700", "3138674", "3139409", "3139508", "3140530", "3144003", "3145877",
+      "3149002", "3150158", "3150539", "3151909", "3153509", "3154150", "3157252",
+      "3158904", "3159357", "3160959", "3161403", "3162559", "3162609", "3163607",
+      "3164472", "3167608", "3168051", "3168408", "3169208", "3170057", "3170578", "3171154"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json — lista extraída da relação de paróquias por forania (9 foranias); wikipedia indica 54 municípios com dois em parte (Santa Margarida e Raul Soares), mas a soma dos municípios citados nas 9 foranias resulta em 56 nomes distintos. CONFLITO RESOLVIDO 2026-09-18: removidos 3 códigos por sobreposição com arquidiocese-de-mariana.json (fonte explícita e mais granular). Abre Campo (3100302) pertence integralmente à Arquidiocese de Mariana — citado na forania de Santa Margarida apenas por agrupamento pastoral da paróquia de Granada, não por território da diocese. Raul Soares (3154002) e Santa Margarida (3157906) são cobertos apenas parcialmente por Caratinga (Raul Soares: distritos de Vermelho Velho, São Vicente da Estrela e São Sebastião do Óculo; Santa Margarida: apenas o distrito-sede) — o restante de ambos pertence à Arquidiocese de Mariana; como não há código IBGE para a fração distrital, os 2 municípios ficam de fora de municipios_ibge (tratamento equivalente a granularidade submunicipal, mas restrito a estes 2 itens dentro de uma diocese majoritariamente 'municipio')",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Caratinga",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q667484",

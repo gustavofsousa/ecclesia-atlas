@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-olinda-e-recife",
@@ -44,12 +44,20 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2600203",
+      "2605152",
+      "2608750",
+      "2611101",
+      "2612455",
+      "2612554",
+      "2612604"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte c) — Granito foi excluído porque a bula publicada no site oficial da Diocese de Salgueiro informa expressamente que o município foi desmembrado de Petrolina para formar Salgueiro. A Wikipédia italiana ainda o inclui e aparenta estar desatualizada. Descartados por serem vizinhos/distrito: Granito.",
+    "fonte_url": "https://gcatholic.org/churches/local/petr1",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q874125",

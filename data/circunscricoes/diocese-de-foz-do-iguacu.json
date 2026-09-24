@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-cascavel",
@@ -44,12 +44,16 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "4105300", "4107157", "4108304", "4110953", "4115606", "4115804",
+      "4116059", "4121257", "4123501", "4124053", "4125456", "4125704",
+      "4126355", "4128559"
+    ],
+    "fonte": "wikipedia — 'A Diocese de Foz do Iguaçu abrange os seguintes municípios: ...', cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Foz_do_Igua%C3%A7u",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q868941",

@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "centro-oeste",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-goiania",
@@ -44,12 +44,30 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "5200209",
+      "5203500",
+      "5203906",
+      "5204250",
+      "5206503",
+      "5207402",
+      "5209101",
+      "5209937",
+      "5211503",
+      "5212105",
+      "5213806",
+      "5216007",
+      "5217104",
+      "5217708",
+      "5218052",
+      "5218391",
+      "5222054"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Itumbiara",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q869875",

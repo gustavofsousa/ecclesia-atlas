@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-4",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-florianopolis",
@@ -44,12 +44,18 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "4201406", "4201950", "4202073", "4204251", "4204608", "4205191",
+      "4205456", "4207007", "4208708", "4209607", "4210407", "4210803",
+      "4211207", "4211256", "4211603", "4212254", "4213807", "4215653",
+      "4216404", "4217600", "4217709", "4218103", "4218350", "4218806",
+      "4219002", "4220000"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Criciúma",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q868206",

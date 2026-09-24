@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-fortaleza",
@@ -44,12 +44,29 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2301000",
+      "2302206",
+      "2303501",
+      "2303709",
+      "2303956",
+      "2304285",
+      "2304400",
+      "2304954",
+      "2305233",
+      "2306256",
+      "2307650",
+      "2307700",
+      "2309607",
+      "2309706",
+      "2310852",
+      "2312403"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v2, fonte b)",
+    "fonte_url": "https://www.arquidiocesedefortaleza.org.br/arquidiocese/historia/dados-gerais/municipios-da-arquidiocese/",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q1364502",

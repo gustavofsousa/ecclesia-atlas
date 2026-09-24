@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-vitoria-da-conquista",
@@ -44,12 +44,33 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2900108",
+      "2900504",
+      "2902807",
+      "2904001",
+      "2908804",
+      "2910107",
+      "2912202",
+      "2912509",
+      "2913002",
+      "2914307",
+      "2917201",
+      "2918605",
+      "2919504",
+      "2921906",
+      "2923035",
+      "2923605",
+      "2924306",
+      "2926707",
+      "2926905",
+      "2931004"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v2, fonte a)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Livramento_de_Nossa_Senhora",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q871350",

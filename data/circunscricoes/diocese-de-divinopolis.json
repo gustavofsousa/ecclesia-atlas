@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-belo-horizonte",
@@ -44,12 +44,18 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3103900", "3110400", "3114204", "3116605", "3117603", "3122306",
+      "3126000", "3130101", "3130200", "3133501", "3133709", "3133808",
+      "3136652", "3138302", "3140704", "3145208", "3145802", "3147105",
+      "3148905", "3149705", "3151404", "3161809", "3162922", "3163102",
+      "3164605"
+    ],
+    "fonte": "wikipedia (seção 'Demografia e paróquias'), cruzado com tools/ibge-municipios.json. Descartado 'Marilândia' citado na lista — só existe município com esse nome no ES, provável referência a distrito ou erro de fonte, sem correspondência clara em MG",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Divin%C3%B3polis",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q868415",

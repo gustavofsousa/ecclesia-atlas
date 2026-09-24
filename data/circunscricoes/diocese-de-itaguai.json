@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-sebastiao-do-rio-de-janeiro",
@@ -44,12 +44,14 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3300100", "3302007", "3302601", "3303807", "3305554"
+    ],
+    "fonte": "wikipedia não lista município a município; confirmado via site oficial da CNBB Regional Leste 1 — território formado por Itaguaí e Mangaratiba (desmembrados da Diocese de Nova Iguaçu) e Angra dos Reis e Paraty (desmembrados da Diocese de Volta Redonda-Barra do Piraí), acrescido de Seropédica (emancipada de Itaguaí em 1995)",
+    "fonte_url": "https://cnbbleste1.org.br/dioceses/itaguai/",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q225897",

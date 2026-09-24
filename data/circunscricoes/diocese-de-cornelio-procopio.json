@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-londrina",
@@ -44,12 +44,32 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "4101903",
+      "4106001",
+      "4106407",
+      "4107009",
+      "4107751",
+      "4112702",
+      "4113403",
+      "4116604",
+      "4117008",
+      "4117214",
+      "4121307",
+      "4123204",
+      "4123907",
+      "4124301",
+      "4124707",
+      "4126009",
+      "4126207",
+      "4126405",
+      "4128401"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Corn%C3%A9lio_Proc%C3%B3pio",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q868164",
