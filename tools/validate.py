@@ -5,6 +5,7 @@ Also runs the domain invariants the JSON Schema can't express on its own:
   - a 'pessoal' jurisdiction must have territorio.tipo == 'sem_territorio'
   - id must equal the file stem (slugs are stable, files are named by them)
   - ids and wikidata_qids are unique across the dataset
+  - granularidade 'municipio' requires a non-empty municipios_ibge list
   - every municipios_ibge code exists in tools/ibge-municipios.json
   - no municipality is claimed by more than one circunscrição
 
@@ -65,6 +66,11 @@ def main() -> int:
             gcatholic[cw["gcatholic_id"]] += 1
 
         terr = data.get("territorio") or {}
+        if (data.get("granularidade_territorial") == "municipio"
+                and not terr.get("municipios_ibge")):
+            errors.append(f"{f.name}: granularidade_territorial 'municipio' exige "
+                          f"territorio.municipios_ibge não vazio — território "
+                          f"dentro de um município é 'submunicipal'")
         for codigo in terr.get("municipios_ibge", []):
             if codigo not in ibge_codigos:
                 errors.append(f"{f.name}: municipio_ibge '{codigo}' não existe na "

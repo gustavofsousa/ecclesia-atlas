@@ -15,6 +15,8 @@
 ### Corrigido
 
 - README (PT/EN) e `docs/data-model.md` apontavam `data/circunscricoes/ordinariado-militar-do-brasil.json` como exemplo — arquivo nunca existiu na v0 (Ordinariado Militar ficou deferido desde a Fase 1-A, ver `tools/wikidata-deferred.csv`). Exemplo de `curl` no README trocado para `prelazia-de-borba.json` (existe, tipo `prelazia_territorial`); nota em `data-model.md` esclarece que a v0 ainda não tem um registro real do caso `pessoal`.
+- **GeoJSON: polígono da Diocese de Osasco cobria a capital paulista inteira.** A reconciliação final listou São Paulo (3550308) como município inteiro de Osasco, embora a própria fonte (site oficial) diga "uma pequena área da cidade de São Paulo". Osasco passa a `granularidade_territorial: submunicipal` com os 12 municípios inteiros (mesmo padrão de Campo Limpo) e sai do GeoJSON derivado até haver geometria parcial. Nenhuma circunscrição reivindica mais o código da capital, que é dividida entre cinco sub-municipais (Arquidiocese de São Paulo, Santo Amaro, Campo Limpo, São Miguel Paulista, Osasco). Total agora: 5.327 códigos IBGE; `dist/circunscricoes.geojson` com 261 features.
+- Diocese de Santo Amaro tinha `granularidade_territorial: municipio` com lista de municípios vazia; corrigida para `submunicipal` (território inteiramente dentro da capital, 10 distritos da Zona Sul, segundo a Wikipédia). `validate.py` ganhou o invariante que impede a regressão: granularidade `municipio` exige `territorio.municipios_ibge` não vazio.
 
 ## [v0.1.0] - 2026-09-18
 
