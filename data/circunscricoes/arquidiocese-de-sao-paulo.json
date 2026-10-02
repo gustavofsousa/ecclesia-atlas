@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "submunicipal",
   "regional_cnbb": "sul-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-paulo",
@@ -45,11 +45,11 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "fonte": "wikipedia — território 'se limita às áreas mais centrais da cidade de São Paulo' (6 regiões episcopais: Sé, Belém, Ipiranga, Santana, Lapa, Brasilândia); NÃO cobre o município de São Paulo por inteiro — as demais regiões da capital e da região metropolitana são cobertas por dioceses sufragâneas distintas (Santo Amaro, Osasco, Guarulhos, Mogi das Cruzes, Santo André, São Miguel Paulista, Campo Limpo, Santos). Caso clássico de granularidade submunicipal — lista vazia de propósito até haver mapeamento distrito→região episcopal",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Arquidiocese_de_São_Paulo",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q1365668",

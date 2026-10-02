@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-olinda-e-recife",
@@ -53,12 +53,24 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2601607",
+      "2601805",
+      "2603926",
+      "2605103",
+      "2605707",
+      "2606606",
+      "2607000",
+      "2607406",
+      "2608057",
+      "2611002",
+      "2614808"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Floresta",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q868857",

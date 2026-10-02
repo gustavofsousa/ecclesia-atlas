@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sorocaba",
@@ -44,12 +44,28 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3505401",
+      "3509254",
+      "3509908",
+      "3514809",
+      "3520301",
+      "3520426",
+      "3521200",
+      "3523305",
+      "3524600",
+      "3526100",
+      "3529906",
+      "3536208",
+      "3537206",
+      "3542602",
+      "3551801"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v2, fonte b)",
+    "fonte_url": "https://diocesederegistro.com.br/a-diocese/",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q874928",

@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-sebastiao-do-rio-de-janeiro",
@@ -44,12 +44,15 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3300308", "3300407", "3301801", "3302254", "3302809", "3303955",
+      "3304003", "3304110", "3304128", "3304201", "3304409", "3306305"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Barra_do_Piraí-Volta_Redonda",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867010",

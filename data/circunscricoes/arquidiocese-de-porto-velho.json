@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "noroeste",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-porto-velho",
@@ -44,12 +44,16 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "1100023", "1100130", "1100205", "1100262", "1100403", "1100452",
+      "1100601", "1100700", "1100809", "1100940", "1101104", "1101401",
+      "1101757"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json (corrigida grafia \"Itapuã d'Oeste\" -> Itapuã do Oeste, nome oficial IBGE)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Arquidiocese_de_Porto_Velho",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q945329",

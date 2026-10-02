@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-salvador-da-bahia",
@@ -44,12 +44,15 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2903409", "2910727", "2911808", "2914653", "2915304", "2916302",
+      "2925303", "2927705"
+    ],
+    "fonte": "wikipedia — 'composta pelos municípios de Itapebi, Itagimirim, Eunápolis, Itabela, Guaratinga, Porto Seguro, Santa Cruz Cabrália e Belmonte', cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Eun%C3%A1polis",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q868736",

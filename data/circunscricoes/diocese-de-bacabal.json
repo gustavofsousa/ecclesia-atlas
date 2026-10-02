@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-5",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-luis-do-maranhao",
@@ -44,12 +44,18 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2100402", "2101202", "2101939", "2102077", "2102150", "2102754",
+      "2104008", "2105203", "2105708", "2105807", "2105906", "2105948",
+      "2105963", "2106003", "2106359", "2107407", "2108108", "2108207",
+      "2108702", "2108900", "2110302", "2111409", "2111631", "2111722",
+      "2112233", "2113009"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Bacabal",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q739979",

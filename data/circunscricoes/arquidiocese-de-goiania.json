@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "centro-oeste",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-goiania",
@@ -44,12 +44,18 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "5200050", "5201405", "5201603", "5201801", "5203302", "5203559",
+      "5203609", "5204557", "5204607", "5205208", "5206305", "5208707",
+      "5208806", "5209200", "5209705", "5210000", "5211404", "5212303",
+      "5219738", "5220264", "5220454", "5220603", "5221403", "5221908",
+      "5222005"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json (corrigida grafia 'ltauçu' -> Itauçu, provável erro de digitação da fonte)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Arquidiocese_de_Goiânia",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q1364537",

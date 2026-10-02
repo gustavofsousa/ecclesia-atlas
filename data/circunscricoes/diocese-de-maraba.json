@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "norte-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-belem-do-para",
@@ -44,12 +44,28 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "1500131",
+      "1501576",
+      "1501758",
+      "1502152",
+      "1502772",
+      "1502954",
+      "1503093",
+      "1503705",
+      "1503804",
+      "1504208",
+      "1504976",
+      "1505494",
+      "1505536",
+      "1507151",
+      "1507508"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b) — Os três nomes descartados têm apenas algumas comunidades atendidas pastoralmente, segundo o site oficial; não foram tratados como municípios integralmente territoriais. Descartados por serem vizinhos/distrito: Tucuruí, Novo Repartimento, São Félix do Xingu.",
+    "fonte_url": "https://diocesedemaraba.com.br/institucional/nossa-historia/",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q871944",

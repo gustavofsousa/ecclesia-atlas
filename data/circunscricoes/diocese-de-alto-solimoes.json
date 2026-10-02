@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "norte-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-manaus",
@@ -36,12 +36,20 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "1300060",
+      "1300201",
+      "1300607",
+      "1303700",
+      "1303908",
+      "1304062",
+      "1304237"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte c) — Não foi localizada lista explícita de municípios em Wikipédia ou site oficial; mantido fallback GCatholic. Belém do Solimões é distrito de Tabatinga. Descartados por serem vizinhos/distrito: Belém do Solimões.",
+    "fonte_url": "https://www.gcatholic.org/churches/local/alto2",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q866805",

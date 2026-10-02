@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-santa-maria",
@@ -44,12 +44,23 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "4300406",
+      "4310553",
+      "4310603",
+      "4311718",
+      "4311759",
+      "4315305",
+      "4317400",
+      "4318002",
+      "4318101",
+      "4322400"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v2, fonte a)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Uruguaiana",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q877684",

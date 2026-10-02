@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-salvador-da-bahia",
@@ -44,12 +44,18 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2900900", "2902401", "2903102", "2903300", "2905800", "2908002",
+      "2911204", "2911501", "2912707", "2912905", "2913457", "2913606",
+      "2913903", "2914901", "2915502", "2915700", "2916609", "2920700",
+      "2922755", "2924678", "2931608", "2932200", "2932309", "2932705",
+      "2933505"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json. Descartado 'Travessão' (distrito de Camamu, não município) citado na fonte.",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Ilhéus",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q869701",

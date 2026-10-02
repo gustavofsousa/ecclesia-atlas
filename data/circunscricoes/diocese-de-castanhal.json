@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "norte-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-belem-do-para",
@@ -44,12 +44,12 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": ["1502400", "1503200", "1502202", "1502608", "1502905", "1503408", "1504109", "1504307", "1504406", "1505007", "1505601", "1506104", "1506112", "1506203", "1506500", "1506609", "1506906", "1507003", "1507102", "1507409", "1507466", "1507474", "1507961", "1508209", "1507201"],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json — 23 municípios do estado do Pará (contagem da wikipedia difere levemente da lista nominal, que soma 25 nomes distintos, todos resolvidos a códigos IBGE únicos no PA)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Castanhal",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867702",

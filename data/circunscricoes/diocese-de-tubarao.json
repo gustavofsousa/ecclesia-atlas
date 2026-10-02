@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-4",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-florianopolis",
@@ -44,12 +44,32 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "4201505",
+      "4202800",
+      "4203956",
+      "4206108",
+      "4206207",
+      "4207205",
+      "4207304",
+      "4208807",
+      "4209409",
+      "4211702",
+      "4212403",
+      "4212650",
+      "4214904",
+      "4215455",
+      "4215604",
+      "4217006",
+      "4217105",
+      "4218400",
+      "4218707"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a) — Grão-Pará foi normalizado para a grafia oficial IBGE.",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Tubar%C3%A3o",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q877562",

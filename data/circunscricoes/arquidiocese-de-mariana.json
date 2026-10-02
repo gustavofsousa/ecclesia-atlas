@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-mariana",
@@ -44,12 +44,12 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": ["3100302", "3100401", "3101631", "3102100", "3102506", "3102902", "3103702", "3105400", "3105608", "3105707", "3108701", "3110202", "3111705", "3112208", "3113107", "3113206", "3115359", "3115409", "3116308", "3116704", "3118007", "3118304", "3120409", "3121506", "3121704", "3121902", "3122702", "3123304", "3123908", "3124005", "3128204", "3129400", "3131901", "3133907", "3135407", "3135506", "3137908", "3140001", "3140902", "3141603", "3145703", "3145851", "3145901", "3146107", "3146602", "3148301", "3148756", "3148806", "3150208", "3150802", "3152105", "3152303", "3153103", "3153806", "3154002", "3154408", "3154903", "3155009", "3155207", "3155801", "3157203", "3157302", "3157401", "3157906", "3159100", "3160108", "3160900", "3163805", "3164001", "3165560", "3165701", "3166006", "3166204", "3166303", "3167301", "3167905", "3168507", "3170503", "3171303"],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Arquidiocese_de_Mariana",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q1364963",

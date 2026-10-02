@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-1",
   "provincia_eclesiastica": {
     "id": "diocese-de-sao-jose-do-rio-preto",
@@ -44,12 +44,16 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3505500", "3509304", "3512001", "3512100", "3514957", "3517406",
+      "3517901", "3521309", "3524204", "3529708", "3531902", "3533908",
+      "3551900"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Barretos",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867021",

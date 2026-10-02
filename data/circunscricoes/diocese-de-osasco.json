@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "submunicipal",
   "regional_cnbb": "sul-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-paulo",
@@ -44,12 +44,25 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3501152",
+      "3502754",
+      "3505708",
+      "3510609",
+      "3513009",
+      "3519709",
+      "3522505",
+      "3525003",
+      "3528403",
+      "3534401",
+      "3550605",
+      "3556453"
+    ],
+    "fonte": "site oficial — 'Abrange 13 municípios do Estado de São Paulo: Alumínio, Araçariguama, Barueri, Carapicuíba, Cotia, Ibiúna, Itapevi, Jandira, Mairinque, Osasco, São Roque, Vargem Grande Paulista e uma pequena área da cidade de São Paulo.' Os 12 municípios inteiros estão listados; São Paulo (3550308) fica fora da lista por ser cobertura parcial (o site não detalha os bairros). Granularidade submunicipal, mesmo padrão de Campo Limpo. Corrige a rodada anterior, que listava São Paulo inteiro e fazia o polígono derivado cobrir a capital toda.",
+    "fonte_url": "https://diocesedeosasco.com.br/area-geografica/",
+    "verificado_em": "2026-10-02",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q390166",

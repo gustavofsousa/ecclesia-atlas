@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-vitoria-da-conquista",
@@ -44,12 +44,16 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2903904", "2906105", "2907103", "2908101", "2909109", "2909307",
+      "2910776", "2917359", "2923704", "2928109", "2928208", "2929057",
+      "2930154", "2930758"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Bom_Jesus_da_Lapa",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867252",

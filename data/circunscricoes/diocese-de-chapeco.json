@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-4",
   "provincia_eclesiastica": {
     "id": "diocese-de-chapeco",
@@ -44,12 +44,20 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "4200101", "4200804", "4203105", "4203501", "4204103", "4204202",
+      "4204400", "4204707", "4204905", "4205001", "4205308", "4205605",
+      "4206405", "4206603", "4207650", "4207684", "4207700", "4208005",
+      "4208401", "4210506", "4210902", "4211009", "4211454", "4212007",
+      "4212106", "4212908", "4214201", "4215208", "4216008", "4216107",
+      "4216255", "4216701", "4216909", "4217204", "4217303", "4217501",
+      "4218756", "4219101", "4219507", "4219606", "4219705"
+    ],
+    "fonte": "wikipedia — elevada a Arquidiocese em 05/11/2024 (Papa Francisco); campo 'tipo' já refletia arquidiocese",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Arquidiocese_de_Chapecó",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867802",

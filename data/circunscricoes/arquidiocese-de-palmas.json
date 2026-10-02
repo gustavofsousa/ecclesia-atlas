@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "norte-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-palmas",
@@ -44,12 +44,15 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "1701101", "1711951", "1712009", "1712405", "1712702", "1715101",
+      "1718758", "1719004", "1720150", "1721000", "1721109"
+    ],
+    "fonte": "wikipedia + gcatholic (churches/local/palm0), fontes concordantes, cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Arquidiocese_de_Palmas",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q1365244",

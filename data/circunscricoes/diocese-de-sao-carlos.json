@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-campinas",
@@ -44,12 +44,27 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3501707",
+      "3503208",
+      "3506706",
+      "3514304",
+      "3516853",
+      "3519303",
+      "3523602",
+      "3529302",
+      "3532058",
+      "3542909",
+      "3543709",
+      "3546900",
+      "3548906",
+      "3554755"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v2, fonte a)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_S%C3%A3o_Carlos",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q876931",

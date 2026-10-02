@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-feira-de-santana",
@@ -44,12 +44,33 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2900207",
+      "2900355",
+      "2901601",
+      "2902658",
+      "2906824",
+      "2907707",
+      "2907806",
+      "2909208",
+      "2910750",
+      "2911402",
+      "2918100",
+      "2919900",
+      "2923050",
+      "2923803",
+      "2924009",
+      "2924207",
+      "2926608",
+      "2927101",
+      "2927606",
+      "2930766"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Paulo_Afonso",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q874022",

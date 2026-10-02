@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-salvador-da-bahia",
@@ -44,12 +44,18 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2901007", "2902302", "2905404", "2907301", "2908309", "2910305",
+      "2911907", "2916856", "2917805", "2918209", "2918803", "2921302",
+      "2922201", "2922409", "2922508", "2922607", "2925758", "2925956",
+      "2928505", "2928703", "2929107", "2929404", "2931202", "2932101",
+      "2932903", "2933174"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json. Fonte cita '27 municípios' mas lista apenas 26 nomes distintos (Valença aparece duplicado no texto); 'Santa Teresinha' corrigido para grafia oficial IBGE 'Santa Terezinha'",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Amargosa",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q866822",

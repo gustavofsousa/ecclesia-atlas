@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-fortaleza",
@@ -53,12 +53,26 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2302057",
+      "2302602",
+      "2303402",
+      "2303907",
+      "2304236",
+      "2304657",
+      "2304707",
+      "2305001",
+      "2305308",
+      "2312304",
+      "2313401",
+      "2313609",
+      "2314102"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://it.wikipedia.org/wiki/Diocesi_di_Tiangu%C3%A1",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q877287",

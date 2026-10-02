@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-aracaju",
@@ -44,12 +44,19 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2800308", "2800506", "2800605", "2801009", "2801306", "2801405",
+      "2801504", "2801900", "2802007", "2802205", "2802304", "2802502",
+      "2802908", "2803203", "2803609", "2803708", "2803906", "2804003",
+      "2804102", "2804458", "2804607", "2804805", "2805000", "2805208",
+      "2805901", "2806008", "2806107", "2806503", "2806602", "2806701",
+      "2806800", "2807006", "2807204"
+    ],
+    "fonte": "wikipedia (seção Demografia e paróquias, 33/33 nomes confirmados), cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Arquidiocese_de_Aracaju",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q1364015",

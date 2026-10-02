@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-da-paraiba",
@@ -53,12 +53,22 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2500205", "2500700", "2500775", "2502003", "2502052", "2502102",
+      "2502201", "2502300", "2502409", "2502607", "2502904", "2503308",
+      "2503704", "2503753", "2504108", "2504306", "2504405", "2504801",
+      "2505600", "2506608", "2507002", "2507408", "2508109", "2508406",
+      "2509156", "2509370", "2509602", "2510006", "2510907", "2511004",
+      "2512036", "2512077", "2512101", "2512804", "2513208", "2513307",
+      "2513356", "2513653", "2513901", "2513927", "2513968", "2513984",
+      "2514206", "2514305", "2514503", "2515708", "2516201", "2516805",
+      "2516904", "2517209"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Cajazeiras",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q582884",

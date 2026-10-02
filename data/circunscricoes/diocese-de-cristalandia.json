@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "norte-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-palmas",
@@ -53,12 +53,17 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "1702000", "1703909", "1704600", "1706100", "1707108", "1707306",
+      "1708205", "1711902", "1712504", "1713700", "1715002", "1716109",
+      "1717503", "1718451", "1718840", "5203575", "5214101", "5215256",
+      "5218003", "5220207"
+    ],
+    "fonte": "wikipedia — território estende-se por Tocantins (15 municípios) e Goiás (5 municípios); cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Cristalândia",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q68844",

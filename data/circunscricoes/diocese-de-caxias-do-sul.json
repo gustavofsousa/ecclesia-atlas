@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-porto-alegre",
@@ -44,12 +44,12 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": ["4302105", "4302253", "4303608", "4304804", "4305108", "4305934", "4305959", "4307864", "4307906", "4308201", "4308607", "4309258", "4311122", "4312385", "4312807", "4312906", "4313086", "4313300", "4313359", "4314001", "4315172", "4318200", "4318440", "4319000", "4322806", "4323309", "4323606", "4319711", "4310363"],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json — 32 municípios do estado do Rio Grande do Sul (contagem da wikipedia difere levemente da lista nominal, que soma 29 nomes distintos, todos resolvidos a códigos IBGE únicos no RS). Inclui São Valentim do Sul, transferido da Diocese/Arquidiocese de Passo Fundo em 1966 (acordo entre bispos, capelania de Santa Bárbara); corrigido em arquidiocese-de-passo-fundo.json onde constava indevidamente",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Caxias_do_Sul",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867747",

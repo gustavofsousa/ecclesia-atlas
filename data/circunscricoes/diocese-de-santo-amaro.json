@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "submunicipal",
   "regional_cnbb": "sul-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-paulo",
@@ -45,11 +45,11 @@
   "territorio": {
     "tipo": "municipios_ibge",
     "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "fonte": "wikipedia — 'O território da diocese de Santo Amaro está inteiramente dentro dos limites do município de São Paulo' (10 distritos da Zona Sul: Santo Amaro, Campo Belo, Campo Grande, Cidade Ademar, Pedreira, Socorro, Grajaú, Cidade Dutra, Parelheiros, Marsilac). Granularidade submunicipal — lista vazia de propósito, mesmo padrão da Arquidiocese de São Paulo e de São Miguel Paulista. Corrige a inconsistência anterior (granularidade 'municipio' com lista vazia).",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Santo_Amaro",
+    "verificado_em": "2026-10-02",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q876165",

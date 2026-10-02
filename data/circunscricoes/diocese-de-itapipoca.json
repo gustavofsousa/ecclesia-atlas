@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-fortaleza",
@@ -44,12 +44,16 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2300754", "2300903", "2304608", "2306108", "2306306", "2306405",
+      "2306553", "2308377", "2310209", "2310258", "2310704", "2312601",
+      "2313351", "2313500", "2313559", "2313757", "2313807"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json. Descartados 'Icaraí de Amontada', 'Mundaú' e 'Juritianha' (distritos sem código IBGE próprio, citados pela fonte como 'municípios ou distritos')",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Itapipoca",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q1574069",

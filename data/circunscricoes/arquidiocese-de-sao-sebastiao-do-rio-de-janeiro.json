@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-sebastiao-do-rio-de-janeiro",
@@ -44,12 +44,12 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": ["3304557"],
+    "fonte": "wikipedia — desde a criação da Diocese de Niterói em 1892, a arquidiocese ficou restrita ao município do Rio de Janeiro",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Arquidiocese_de_São_Sebastião_do_Rio_de_Janeiro",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q250235",

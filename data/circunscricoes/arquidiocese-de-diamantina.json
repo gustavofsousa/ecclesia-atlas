@@ -10,7 +10,7 @@
   },
   "tipo": "arquidiocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "leste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-diamantina",
@@ -44,12 +44,12 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": ["3102407", "3102852", "3104452", "3104809", "3109204", "3109402", "3112307", "3113503", "3118106", "3119104", "3120102", "3120904", "3121001", "3121605", "3125408", "3125507", "3125705", "3127602", "3131109", "3132503", "3136405", "3138104", "3142502", "3143609", "3151206", "3153202", "3153301", "3160207", "3160603", "3165909", "3166501", "3167103", "3169356", "3170800"],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Arquidiocese_de_Diamantina",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q369054",

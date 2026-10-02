@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "submunicipal",
   "regional_cnbb": "sul-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-sao-paulo",
@@ -53,12 +53,12 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": ["3515004", "3515103", "3522208", "3526209", "3549953", "3552809"],
+    "fonte": "wikipedia — diocese cobre integralmente os municípios de Embu das Artes, Embu-Guaçu, Itapecerica da Serra, Juquitiba, São Lourenço da Serra e Taboão da Serra, MAS também abrange 'vários bairros localizados nas porções sul e oeste' do município de São Paulo (Campo Limpo, Butantã, Morumbi, Jardim São Luís, Capão Redondo, Jardim Ângela) — cobertura parcial do município de São Paulo, que não entra na lista de municipios_ibge por não ser possível mapear distrito→código IBGE de município inteiro. Granularidade classificada como submunicipal por essa porção; os 6 municípios integrais ficam documentados apenas em prosa aqui (ver nota)",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Campo_Limpo",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867602",

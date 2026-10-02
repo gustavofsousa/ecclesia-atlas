@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-3",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-santa-maria",
@@ -44,12 +44,25 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "4300109",
+      "4301206",
+      "4302808",
+      "4303004",
+      "4305132",
+      "4309753",
+      "4311239",
+      "4313391",
+      "4314068",
+      "4317004",
+      "4320263",
+      "4320701"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte a)",
+    "fonte_url": "https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Cachoeira_do_Sul",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867513",

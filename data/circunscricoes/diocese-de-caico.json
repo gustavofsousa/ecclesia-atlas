@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "nordeste-2",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-natal",
@@ -53,12 +53,17 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "2400109", "2402006", "2402402", "2402709", "2403004", "2403103",
+      "2403400", "2403806", "2404804", "2405603", "2405702", "2406106",
+      "2406502", "2408508", "2408904", "2411429", "2411809", "2412104",
+      "2412401", "2413003", "2413409", "2414159", "2414308"
+    ],
+    "fonte": "wikipedia, cruzado com tools/ibge-municipios.json",
+    "fonte_url": "https://pt.wikipedia.org/wiki/Diocese_de_Caicó",
+    "verificado_em": "2026-09-18",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q867536",

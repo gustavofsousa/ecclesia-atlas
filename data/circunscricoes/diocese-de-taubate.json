@@ -10,7 +10,7 @@
   },
   "tipo": "diocese",
   "tipo_jurisdicao": "territorial",
-  "granularidade_territorial": "indefinido",
+  "granularidade_territorial": "municipio",
   "regional_cnbb": "sul-1",
   "provincia_eclesiastica": {
     "id": "arquidiocese-de-aparecida",
@@ -44,12 +44,24 @@
   },
   "territorio": {
     "tipo": "municipios_ibge",
-    "municipios_ibge": [],
-    "fonte": null,
-    "fonte_url": null,
-    "verificado_em": null,
-    "confianca": "nao_verificado",
-    "metodo": "automatico"
+    "municipios_ibge": [
+      "3508504",
+      "3509700",
+      "3524907",
+      "3532306",
+      "3538006",
+      "3542305",
+      "3548203",
+      "3548609",
+      "3550001",
+      "3554102",
+      "3554805"
+    ],
+    "fonte": "pesquisa dirigida (perplexity v3, fonte b) — O site oficial enumera as cidades atendidas. São Luiz do Paraitinga foi grafado conforme o nome oficial do município.",
+    "fonte_url": "https://diocesedetaubate.org.br/diocese/",
+    "verificado_em": "2026-09-22",
+    "confianca": "alta",
+    "metodo": "manual"
   },
   "crosswalk": {
     "wikidata_qid": "Q206749",
