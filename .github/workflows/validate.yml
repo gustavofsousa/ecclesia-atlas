@@ -16,3 +16,5 @@ jobs:
           python-version: "3.12"
       - run: pip install -r tools/requirements.txt
       - run: python tools/validate.py
+      # Fase 2 / Nível 1: dist/all.json is derived from data/ and must not drift.
+      - run: python tools/build-all-json.py --check
