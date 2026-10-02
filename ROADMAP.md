@@ -74,11 +74,11 @@ A Fase 1 tem uma vara longa escondida: montar a lista de municípios por circuns
 
 ### Débitos de dados abertos (pós-`v0.2.0`)
 
-Consolidado da revisão do PR #4. Os três primeiros itens são o lote da próxima rodada de pesquisa dirigida (Perplexity, JSON estruturado, lotes pequenos).
+Consolidado da revisão do PR #4 e do fechamento da Fase 2. **O primeiro item é a próxima rodada de pesquisa dirigida** (Perplexity, JSON estruturado, lotes pequenos).
 
+- **244 municípios sem circunscrição** (de 5.571; medido em 2026-10-02 cruzando `data/` com `tools/ibge-municipios.json`). Por UF: SC 39, PI 27, PA 25, AM 23, MA 21, MT 17, TO 13, RS 13, MG 12, GO 10, RN 8, PB 8, PR 8, BA 6, PE 3, SP 3, AL 2, SE 2, ES 2, RO 1, RR 1. Há duas causas. (a) 8 prelazias territoriais seguem fora de escopo (`tools/wikidata-deferred.csv`: Marajó, Tefé, Lábrea, Itacoatiara, Itaituba, Alto Xingu-Tucumã, São Félix, Paranatinga) e explicam parte de PA/AM/MT. (b) O resto, inclusive todo SC/PI/RS/MG/GO, são **listas incompletas em circunscrições marcadas `alta`**: a `confianca` vale para os municípios listados, não para a completude da lista. Exemplos: Natal (81 de 88), Palmas e Francisco Beltrão, Pinheiro, Sobral, e a Diocese de Roraima sem São Luiz do Anauá. A pesquisa é **invertida**: em vez de "quais municípios a diocese X tem", pergunta "a que circunscrição pertence o município Y", e o resultado é checável por adjacência.
 - **Confiança baixa ou média:** Diocese de Teófilo Otoni em `media` (sem fonte territorial explícita) e Arquidiocese de Teresina em `baixa`.
-- **Listas incompletas marcadas `alta`:** Natal (81 de 88 municípios), Palmas e Francisco Beltrão, Pinheiro e Sobral. Nesses registros a `confianca` vale para os municípios listados, não para a completude da lista: o polígono fica menor que o real, mas não errado.
-- **Prelazia de Boa Vista** sem território (deferida desde a 1-A).
+- **Correção: Boa Vista não está sem território.** Boa Vista/RR pertence à Diocese de Roraima, que está no dataset. O item `Q111923688` ("Prelazia de Roraima") em `tools/wikidata-deferred.csv` é a prelazia histórica (1963–1979) que virou essa diocese, não uma circunscrição pendente. A menção a "Boa Vista sem território" nos docs anteriores (1B.2, release `v0.2.0`) estava errada; reclassificar a linha do CSV fica para a próxima mexida nele.
 - **Municípios divididos** entre duas circunscrições (Raul Soares e Santa Margarida/MG, Morada Nova/CE, Miguel Pereira/RJ, Porto Velho/RO) ficam inteiros com a circunscrição majoritária. É um limite do modelo e só vira trabalho se o schema ganhar "município parcial".
 - **5 sub-municipais sem geometria** (Arquidiocese de São Paulo, Santo Amaro, Campo Limpo, São Miguel Paulista, Osasco).
 - **Malha provisória** (`tbrugz/geodata-br`): faltam 7 municípios recentes; trocar pela malha oficial do IBGE.
@@ -94,15 +94,15 @@ O canal mais eficiente não é o `awesome-catholic` — é onde o público do ni
 
 ---
 
-## Fase 2 — Distribuição e API 🔜
+## Fase 2 — Distribuição e API ✅ (Níveis 0 e 1)
 
 Onde entra a ideia de API. Três níveis, do mais barato ao mais caro — só sobe de nível quando o anterior aperta.
 
 - **Nível 0 — CDN estática (grátis, já disponível). ✅** Verificado com a tag `@v0.2.0` no jsDelivr. Ler os JSON via raw GitHub ou jsDelivr. Já é uma API de leitura sem infra. Provavelmente resolve 90% dos consumidores.
-- **Nível 1 — Agregados de build. 🔜 (metade feita)** Passo que compila os registros individuais em `all.json` + GeoJSON derivado do IBGE, publicados como artefatos de release. Continua estático e versionado. O GeoJSON já é asset do `v0.2.0`; **falta o `all.json`, que é o próximo passo do projeto.**
+- **Nível 1 — Agregados de build. ✅ (2026-10-02, [`v0.3.0`](https://github.com/gustavofsousa/ecclesia-atlas/releases/tag/v0.3.0))** Passo que compila os registros individuais em `all.json` + GeoJSON derivado do IBGE, publicados como artefatos de release. Continua estático e versionado. `tools/build-all-json.py` gera `dist/all.json` (array ordenado por `id`, cada item idêntico ao arquivo em `data/`, determinístico). O CI roda `--check` para o agregado não divergir do dado. Todo release leva `all.json` + `circunscricoes.geojson` como assets (roteiro em `tools/README.md`). O GeoJSON não tem o mesmo guarda no CI, porque o build depende da malha de 22MB; ele é regenerado no roteiro de release.
 - **Nível 2 — API de query (condicional).** REST/GraphQL serverless, somente leitura, gerada a partir do mesmo dado do Git. **Nunca** fonte da verdade — sempre derivada. Só se houver demanda real por busca/filtro que os arquivos estáticos não atendem.
 
-**Pronto quando:** existe pelo menos o Nível 1 e um exemplo de consumo documentado (já há um snippet no README).
+**Pronto quando:** existe pelo menos o Nível 1 e um exemplo de consumo documentado (já há um snippet no README). ✅ Fase 2 completa em 2026-10-02: Nível 1 no `v0.3.0` e exemplo "a que circunscrição pertence este município?" no README. O Nível 2 continua condicional a demanda real.
 
 ---
 

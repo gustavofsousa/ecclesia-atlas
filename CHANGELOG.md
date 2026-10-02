@@ -1,5 +1,18 @@
 # Changelog
 
+## [v0.3.0] - 2026-10-02
+
+### Adicionado
+
+- **Fase 2, Nível 1:** `dist/all.json` reúne os 266 registros num arquivo só: array ordenado por `id`, cada item idêntico ao seu arquivo em `data/`, com a proveniência incluída. É gerado por `tools/build-all-json.py` de forma determinística e publicado como asset de release junto com `circunscricoes.geojson`; também fica disponível via jsDelivr/raw em `dist/`.
+- CI: `build-all-json.py --check` falha o PR se `dist/all.json` estiver desatualizado em relação a `data/`.
+- README: exemplo de consumo "a que circunscrição pertence este município?" via `all.json`; os links de download apontam para o último release.
+- `tools/README.md`: roteiro para publicar um release.
+
+### Corrigido
+
+- O README chamava o território de "completo" e dizia que Boa Vista estava sem território. As 266 circunscrições têm território, mas **244 dos 5.571 municípios do Brasil ainda não pertencem a nenhuma delas** (listas incompletas e 8 prelazias territoriais fora de escopo; detalhe no ROADMAP). Boa Vista/RR pertence à Diocese de Roraima, que já estava no dataset.
+
 ## [v0.2.0] - 2026-10-02
 
 ### Adicionado
