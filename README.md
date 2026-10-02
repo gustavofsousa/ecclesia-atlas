@@ -4,7 +4,7 @@
 
 *Open, versioned, field-sourced dataset of the Catholic Church's ecclesiastical structure in Brazil.*
 
-**Status:** esqueleto inicial — schema e modelo de contribuição prontos, dataset real ainda não. Repositório pessoal por enquanto; migra para uma organização quando houver contribuidores de fora.
+**Status:** [v0.1.0](https://github.com/gustavofsousa/ecclesia-atlas/releases/tag/v0.1.0) — 266 circunscrições (215 dioceses + 48 arquidioceses + 3 prelazias territoriais), com regional CNBB e província eclesiástica. Território municipal (IBGE) é a próxima fase. Repositório pessoal por enquanto; migra para uma organização quando houver contribuidores de fora.
 
 ## Por que isto existe
 
