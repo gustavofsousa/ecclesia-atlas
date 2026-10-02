@@ -4,9 +4,9 @@
 
 *Open, versioned, field-sourced dataset of the Catholic Church's ecclesiastical structure in Brazil.*
 
-**Status:** `v0.2.0` (ver [ROADMAP.md](ROADMAP.md)) — 266 circunscrições (215 dioceses + 48 arquidioceses + 3 prelazias territoriais), com regional CNBB, província eclesiástica e **território municipal completo** (5.327 códigos IBGE, 264 circunscrições em confiança alta / 1 em média / 1 em baixa). Boa Vista (prelazia) segue sem território, fora de escopo por ora. Repositório pessoal por enquanto; migra para uma organização quando houver contribuidores de fora.
+**Status:** `v0.3.0` (ver [ROADMAP.md](ROADMAP.md)) — 266 circunscrições (215 dioceses + 48 arquidioceses + 3 prelazias territoriais), com regional CNBB, província eclesiástica e **território municipal** (5.327 códigos IBGE; 244 dos 5.571 municípios do Brasil ainda sem circunscrição, ver [ROADMAP.md](ROADMAP.md)). Confiança declarada: 264 circunscrições em alta / 1 em média / 1 em baixa. Repositório pessoal por enquanto; migra para uma organização quando houver contribuidores de fora.
 
-*`v0.2.0` (see [ROADMAP.md](ROADMAP.md)) — 266 ecclesiastical circumscriptions (215 dioceses + 48 archdioceses + 3 territorial prelatures), each with CNBB region, ecclesiastical province, and **complete municipal territory** (5,327 IBGE municipality codes, 264 circumscriptions at high confidence / 1 at medium / 1 at low). Boa Vista (prelature) still lacks territory, out of scope for now. Personal repo for now; migrates to an org once outside contributors show up.*
+*`v0.3.0` (see [ROADMAP.md](ROADMAP.md)) — 266 ecclesiastical circumscriptions (215 dioceses + 48 archdioceses + 3 territorial prelatures), each with CNBB region, ecclesiastical province, and **municipal territory** (5,327 IBGE codes; 244 of Brazil's 5,571 municipalities still have no circumscription, see [ROADMAP.md](ROADMAP.md)). Declared confidence: 264 circumscriptions high / 1 medium / 1 low. Personal repo for now; migrates to an org once outside contributors show up.*
 
 ## Por que isto existe
 
@@ -45,7 +45,7 @@ The full plan — every phase, what's deferred, and what will never be built —
 Resumo (detalhe no [ROADMAP.md](ROADMAP.md), Fase 2): a API **não** é a Fase 1 e **nunca** é a fonte da verdade — o dado versionado no Git é. A API é uma camada de consumo derivada, em três níveis:
 
 1. **Nível 0 (já disponível, zero infra):** ler os arquivos JSON direto do GitHub (raw) ou por uma CDN como o jsDelivr. Isto já é uma "API de leitura" estática.
-2. **Nível 1:** um passo de build que compila os registros em arquivos agregados (`all.json`, GeoJSON derivado da malha do IBGE), publicados como artefatos de release.
+2. **Nível 1:** um passo de build que compila os registros em arquivos agregados (`all.json`, GeoJSON derivado da malha do IBGE), publicados como artefatos de release. Disponível desde o `v0.3.0`.
 3. **Nível 2 (condicional):** uma API REST/GraphQL serverless de leitura — só se houver demanda que justifique a manutenção.
 
 ### Where does the API fit in?
@@ -53,7 +53,7 @@ Resumo (detalhe no [ROADMAP.md](ROADMAP.md), Fase 2): a API **não** é a Fase 1
 Summary (detail in [ROADMAP.md](ROADMAP.md), Phase 2): the API is **not** Phase 1 and is **never** the source of truth — the versioned Git data is. The API is a derived consumption layer, in three tiers:
 
 1. **Tier 0 (already available, zero infra):** read the JSON files straight from GitHub (raw) or a CDN like jsDelivr. This is already a static "read API."
-2. **Tier 1:** a build step that compiles records into aggregate files (`all.json`, GeoJSON derived from the IBGE mesh), published as release artifacts.
+2. **Tier 1:** a build step that compiles records into aggregate files (`all.json`, GeoJSON derived from the IBGE mesh), published as release artifacts. Available since `v0.3.0`.
 3. **Tier 2 (conditional):** a serverless REST/GraphQL read API — only if demand justifies the upkeep.
 
 ## Ver o dado agora
@@ -67,8 +67,9 @@ curl -s https://cdn.jsdelivr.net/gh/gustavofsousa/ecclesia-atlas@main/data/circu
 # ou direto do GitHub (raw)
 curl -s https://raw.githubusercontent.com/gustavofsousa/ecclesia-atlas/main/data/circunscricoes/prelazia-de-borba.json
 
-# território de todas as circunscrições como GeoJSON (asset do release)
-curl -sL https://github.com/gustavofsousa/ecclesia-atlas/releases/download/v0.2.0/circunscricoes.geojson -o circunscricoes.geojson
+# todos os registros num arquivo só + território como GeoJSON (assets do último release)
+curl -sLO https://github.com/gustavofsousa/ecclesia-atlas/releases/latest/download/all.json
+curl -sLO https://github.com/gustavofsousa/ecclesia-atlas/releases/latest/download/circunscricoes.geojson
 ```
 
 ```js
@@ -78,7 +79,17 @@ const arq = await fetch(`${base}/data/circunscricoes/arquidiocese-de-sao-salvado
 console.log(arq.nome.valor, "—", arq.tipo);
 ```
 
-> Dica: fixe uma tag de release (ex.: `@v0.2.0`) em vez de `@main` para consumo estável.
+Para responder "a que circunscrição pertence este município?", baixe o agregado `all.json` e procure pelo código IBGE:
+
+```js
+const todas = await fetch(`${base}/dist/all.json`).then((r) => r.json());
+const circ = todas.find((c) => c.territorio.municipios_ibge?.includes("2910800")); // Feira de Santana
+console.log(circ.nome.valor, "—", circ.regional_cnbb); // Arquidiocese de Feira de Santana — nordeste-3
+```
+
+> Um município dividido entre duas circunscrições fica com a que cobre a maior parte. A capital paulista, dividida entre cinco circunscrições sub-municipais, não pertence a nenhuma no `all.json` (ver [ROADMAP.md](ROADMAP.md)).
+
+> Dica: fixe uma tag de release (ex.: `@v0.3.0`) em vez de `@main` para consumo estável.
 
 ### See the data now
 
@@ -91,8 +102,9 @@ curl -s https://cdn.jsdelivr.net/gh/gustavofsousa/ecclesia-atlas@main/data/circu
 # or straight from GitHub (raw)
 curl -s https://raw.githubusercontent.com/gustavofsousa/ecclesia-atlas/main/data/circunscricoes/prelazia-de-borba.json
 
-# every circumscription's territory as GeoJSON (release asset)
-curl -sL https://github.com/gustavofsousa/ecclesia-atlas/releases/download/v0.2.0/circunscricoes.geojson -o circunscricoes.geojson
+# every record in one file + territory as GeoJSON (latest release assets)
+curl -sLO https://github.com/gustavofsousa/ecclesia-atlas/releases/latest/download/all.json
+curl -sLO https://github.com/gustavofsousa/ecclesia-atlas/releases/latest/download/circunscricoes.geojson
 ```
 
 ```js
@@ -102,7 +114,17 @@ const arq = await fetch(`${base}/data/circunscricoes/arquidiocese-de-sao-salvado
 console.log(arq.nome.valor, "—", arq.tipo);
 ```
 
-> Tip: pin a release tag (e.g. `@v0.2.0`) instead of `@main` for stable consumption.
+To answer "which circumscription does this municipality belong to?", fetch the `all.json` aggregate and look up the IBGE code:
+
+```js
+const todas = await fetch(`${base}/dist/all.json`).then((r) => r.json());
+const circ = todas.find((c) => c.territorio.municipios_ibge?.includes("2910800")); // Feira de Santana
+console.log(circ.nome.valor, "—", circ.regional_cnbb); // Arquidiocese de Feira de Santana — nordeste-3
+```
+
+> A municipality split between two circumscriptions belongs to the one covering most of it. São Paulo city, split among five sub-municipal circumscriptions, belongs to none in `all.json` (see [ROADMAP.md](ROADMAP.md)).
+
+> Tip: pin a release tag (e.g. `@v0.3.0`) instead of `@main` for stable consumption.
 
 ## Sem servidor, de propósito
 
