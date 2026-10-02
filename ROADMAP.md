@@ -45,7 +45,7 @@ Feito em 2026-08-18.
 
 ---
 
-## Fase 1 — Atlas: as ~280 circunscrições 🔜 (próximo passo real)
+## Fase 1 — Atlas: as ~280 circunscrições ✅
 
 São ~280 circunscrições — ordem de grandeza pequena, curável à mão. Paróquias (milhares) são outra ordem de magnitude e **não** entram aqui.
 
@@ -58,11 +58,11 @@ A Fase 1 tem uma vara longa escondida: montar a lista de municípios por circuns
   - Dos 300 itens do Wikidata: **18 descartes de ruído** (sés extintas/suprimidas, diocese anglicana, igreja ortodoxa, províncias) em `tools/wikidata-excluded.csv`; **16 deferidos para fases futuras** em `tools/wikidata-deferred.csv` — prelazias territoriais, eparquias/arquieparquias/exarcado de rito oriental, ordinariado militar e ordinariado oriental. Nada dropado em silêncio. Fazer bem o caso comum primeiro; o resto é escopo declarado de fase futura (não anti-escopo).
 - **1A.2 Curadoria manual. ✅ (2026-08-18)** `regional_cnbb` (19 regionais da CNBB) e `provincia_eclesiastica {id, papel}` preenchidos nos 266 a partir das tabelas de província do GCatholic — o bootstrap os deixou `null` de propósito por não haver fonte automática confiável. **Modelo de referência**: `provincia_eclesiastica.id` aponta para o slug da **arquidiocese-sé** (um arquivo que existe); metropolitanas auto-referenciam, sufragâneas apontam para sua sé. Integridade referencial verificada nos 266. Território fica `granularidade_territorial: indefinido`. Ressalva honesta: a fonte marcou `confianca: alta` de forma uniforme, e o schema atual não persiste confiança/fonte para esses dois campos — vale verificação pontual.
 - **1A.3 Validação em CI. ✅** `tools/validate.py` (jsonschema + invariantes de domínio) e GitHub Action `.github/workflows/validate.yml` rodando em cada push/PR. Verde no PR #1.
-- **1A.4 Release `v0.1.0`** (tag imutável) + divulgação (ver abaixo). ✅ Tag e release publicados em 2026-09-18. Divulgação parcial: issue aberta no `allanfrizzo/liturgia-catolica-api`; issue #17 do `Dancrf/liturgia-diaria`, `awesome-catholic` e Hozana sem registro, ficaram pendentes.
+- **1A.4 Release `v0.1.0`** (tag imutável) + divulgação (ver abaixo). ✅ Tag e release publicados em 2026-09-18. Estado da divulgação: ver a seção Divulgação abaixo.
 
 **Pronto quando:** as ~280 circunscrições existem como arquivos válidos, com `regional_cnbb` e `provincia_eclesiastica` preenchidos, e um release imutável publicado.
 
-### Fase 1-B — Território → `v0.2.0`
+### Fase 1-B — Território → `v0.2.0` ✅
 
 - **1B.1 Malha do IBGE. ✅ (2026-09-18)** `tools/ibge-municipios.json` — referência oficial dos 5.571 municípios do Brasil (`codigo_ibge` 7 dígitos, `nome`, `uf`), baixada de `servicodados.ibge.gov.br` por `tools/fetch-ibge-municipios.py`. `validate.py` agora confere todo `territorio.municipios_ibge` contra essa lista e garante que nenhum município pertença a duas circunscrições ao mesmo tempo. GeoJSON continua *derivado* por união da malha depois que 1B.2 povoar os dados, nunca desenhado à mão.
 - **1B.2 Lista de municípios por circunscrição. ✅ (2026-09-22, reconciliação final)** Cobertura completa das 266 circunscrições (265 + Boa Vista deferida como prelazia, fora do escopo 1-A). **Piloto das 26 capitais estaduais (2026-09-18)**: 24 com `granularidade_territorial: municipio` (468 municípios), 2 sub-municipais genuínas (Macapá, São Paulo). Processo página a página: Wikipédia como primeira fonte, GCatholic `churches/local/<gcatholic_id>` como fallback, todo nome cruzado contra `tools/ibge-municipios.json`. **Curadoria manual das 240 restantes (2026-09-22)**: 121 via Wikipédia, as outras 120 via proxy GCatholic (`confianca: media`, aceito sem checagem individual — débito técnico registrado). **Reconciliação via pesquisa dirigida, 1ª rodada (2026-09-22)**: as 128 circunscrições em `confianca: media` foram revisadas por pesquisa em 13 lotes pequenos (Perplexity, saída JSON estruturada). Uma primeira rodada (v1, lotes markdown maiores) veio contaminada — confundiu tabelas de "província eclesiástica"/dioceses vizinhas da Wikipédia com território real, e trocou nomes de município por nomes de paróquia geograficamente distantes — e foi revertida por completo antes de tocar nos dados. A v2, com lotes menores e prompt proibindo extração de tabelas de vizinhança, veio limpa: dos 128 resultados, só 5 nomes bateram com sé de circunscrição vizinha (2 contaminação real — "Barra" e "Santa Maria", nomes de sé confundidos com município homônimo distante — descartados; 3 já eram o caso conhecido de São Paulo capital). 55 elevadas para `alta`, 16 conflitos resolvidos por adjacência geográfica real. **Reconciliação via pesquisa dirigida, 2ª rodada / final (2026-09-22)**: as 102 circunscrições que restaram em `media` foram fechadas em 12 lotes v3 (mesmo formato JSON estruturado, `fonte_usada`/nomes descartados/nota por item; 6 lotes vieram como `.json`, 6 como `.md` com o mesmo JSON dentro de um bloco de código — extraídos e tratados como equivalentes). 101 elevadas para `alta`; só Diocese de Teófilo Otoni ficou em `media` porque a pesquisa não achou fonte territorial explícita e a lista anterior foi preservada em vez de zerada (regra: pesquisa sem fonte melhor não regride o dado existente). 13 novos conflitos de município resolvidos por adjacência geográfica real e não por confiança declarada, incluindo 2 casos de precedente histórico já documentado (São Valentim do Sul → Diocese de Caxias do Sul desde 1966; Rondolândia/MT → Diocese de Juína, mesmo estado) e 1 sub-municipal novo (Diocese de São Miguel Paulista, enclave na Zona Leste da capital paulistana, `granularidade_territorial: submunicipal`, sem o código de São Paulo para não duplicar com Osasco). **Total final: 5.328 códigos IBGE, 266 arquivos `metodo: manual`, 264 `confianca: alta` / 1 `media` (Teófilo Otoni) / 1 `baixa` (Arquidiocese de Teresina, débito pré-existente fora desta reconciliação).** `validate.py` verde nos 266 arquivos. Débito residual: os pares de nomes ambíguos das duas rodadas ficam registrados aqui como precedente para futura curadoria; Teófilo Otoni e Teresina seguem como candidatos a uma pesquisa dedicada futura.
@@ -70,16 +70,27 @@ A Fase 1 tem uma vara longa escondida: montar a lista de municípios por circuns
 
 **Pré-requisito de estudo — CONFIRMADO (2026-09-18):** o `kburchfiel/us_diocese_mapper` já validou a aposta no IBGE (agregação por unidade administrativa, não geometria desenhada à mão) — ABERTO-2 de-riscado por precedente. Reconfirmação direta para o Brasil: query SPARQL testada contra P527 ("has part") e P150 ("contains administrative territorial entity") nas ~280 dioceses/arquidioceses — **0 resultados em ambas**, Wikidata não tem esse relacionamento estruturado para o Brasil. A Wikipédia pt também não é uniforme: algumas páginas trazem a lista em prosa direta (ex. Arquidiocese de São Salvador da Bahia: "abrange os municípios de Itaparica, Lauro de Freitas, Salinas da Margarida, Salvador e Vera Cruz"), outras só têm o dado implícito na tabela de paróquias (ex. Diocese de Criciúma: "26 municípios", sem lista). **Conclusão: não há atalho automático — 1B.2 é curadoria manual página a página, como o roadmap já previa**, sem fonte estruturada única para basear um script de bootstrap.
 
-**Pronto quando:** território municipal preenchido para a maioria das circunscrições, com GeoJSON derivado publicado como artefato de release. ✅ Fase 1-B completa (2026-09-23).
+**Pronto quando:** território municipal preenchido para a maioria das circunscrições, com GeoJSON derivado publicado como artefato de release. ✅ Fase 1-B completa (2026-09-23). Release [`v0.2.0`](https://github.com/gustavofsousa/ecclesia-atlas/releases/tag/v0.2.0) publicado em 2026-10-02, com `circunscricoes.geojson` (261 polígonos) como asset, depois da correção pré-release de Osasco/Santo Amaro (ver 1B.3).
 
-### Divulgação (no release do `v0.1.0`)
+### Débitos de dados abertos (pós-`v0.2.0`)
+
+Consolidado da revisão do PR #4. Os três primeiros itens são o lote da próxima rodada de pesquisa dirigida (Perplexity, JSON estruturado, lotes pequenos).
+
+- **Confiança baixa ou média:** Diocese de Teófilo Otoni em `media` (sem fonte territorial explícita) e Arquidiocese de Teresina em `baixa`.
+- **Listas incompletas marcadas `alta`:** Natal (81 de 88 municípios), Palmas e Francisco Beltrão, Pinheiro e Sobral. Nesses registros a `confianca` vale para os municípios listados, não para a completude da lista: o polígono fica menor que o real, mas não errado.
+- **Prelazia de Boa Vista** sem território (deferida desde a 1-A).
+- **Municípios divididos** entre duas circunscrições (Raul Soares e Santa Margarida/MG, Morada Nova/CE, Miguel Pereira/RJ, Porto Velho/RO) ficam inteiros com a circunscrição majoritária. É um limite do modelo e só vira trabalho se o schema ganhar "município parcial".
+- **5 sub-municipais sem geometria** (Arquidiocese de São Paulo, Santo Amaro, Campo Limpo, São Miguel Paulista, Osasco).
+- **Malha provisória** (`tbrugz/geodata-br`): faltam 7 municípios recentes; trocar pela malha oficial do IBGE.
+
+### Divulgação (releases `v0.1.0` e `v0.2.0`)
 
 O canal mais eficiente não é o `awesome-catholic` — é onde o público do nicho já está:
 
-- Comentar na **issue #17 do `Dancrf/liturgia-diaria`** (194★, pede dumps JSON desde jun/2024) apresentando o Atlas. Escopo não sobrepõe: ele tem texto (com dono), nós temos estrutura.
-- Abrir issue/contato no **`allanfrizzo/liturgia-catolica-api`** (recente, OpenAPI bem-feito).
-- Submeter ao **`awesome-catholic`**.
-- Mandar uma mensagem à **Hozana (OpenChurch)** — custo zero, pode render a coisa mais escassa do projeto: uma segunda pessoa.
+- ⏳ Comentar na **issue #17 do `Dancrf/liturgia-diaria`** (217★ em out/2026, pede dumps JSON desde jun/2024) apresentando o Atlas. Escopo não sobrepõe: ele tem texto (com dono), nós temos estrutura.
+- ✅ Abrir issue/contato no **`allanfrizzo/liturgia-catolica-api`** (recente, OpenAPI bem-feito): issue #1 aberta em 2026-09-18, sem resposta até 2026-10-02. ⏳ Comentário de atualização sobre o `v0.2.0` pendente.
+- ✅ Submeter ao **`awesome-catholic`**: listado no `servusdei2018/awesome-catholic` (PR #70, mergeado em 2026-09-20, nas 5 línguas). ⏳ Falta o `CatholicOS/awesome-catholic`, a segunda lista ativa, mantida pela CatholicOS, que também mantém a Liturgical Calendar API (relevante para a Fase 3).
+- ⏳ Mandar uma mensagem à **Hozana (OpenChurch)** — custo zero, pode render a coisa mais escassa do projeto: uma segunda pessoa. Canal: contato direto (e-mail/LinkedIn). O repo `hozana/openchurch` não recebe issues de fora (nenhuma aberta até hoje) e não tem Discussions.
 
 ---
 
@@ -87,8 +98,8 @@ O canal mais eficiente não é o `awesome-catholic` — é onde o público do ni
 
 Onde entra a ideia de API. Três níveis, do mais barato ao mais caro — só sobe de nível quando o anterior aperta.
 
-- **Nível 0 — CDN estática (grátis, já disponível).** Ler os JSON via raw GitHub ou jsDelivr. Já é uma API de leitura sem infra. Provavelmente resolve 90% dos consumidores.
-- **Nível 1 — Agregados de build.** Passo que compila os registros individuais em `all.json` + GeoJSON derivado do IBGE, publicados como artefatos de release. Continua estático e versionado.
+- **Nível 0 — CDN estática (grátis, já disponível). ✅** Verificado com a tag `@v0.2.0` no jsDelivr. Ler os JSON via raw GitHub ou jsDelivr. Já é uma API de leitura sem infra. Provavelmente resolve 90% dos consumidores.
+- **Nível 1 — Agregados de build. 🔜 (metade feita)** Passo que compila os registros individuais em `all.json` + GeoJSON derivado do IBGE, publicados como artefatos de release. Continua estático e versionado. O GeoJSON já é asset do `v0.2.0`; **falta o `all.json`, que é o próximo passo do projeto.**
 - **Nível 2 — API de query (condicional).** REST/GraphQL serverless, somente leitura, gerada a partir do mesmo dado do Git. **Nunca** fonte da verdade — sempre derivada. Só se houver demanda real por busca/filtro que os arquivos estáticos não atendem.
 
 **Pronto quando:** existe pelo menos o Nível 1 e um exemplo de consumo documentado (já há um snippet no README).

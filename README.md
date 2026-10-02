@@ -66,6 +66,9 @@ curl -s https://cdn.jsdelivr.net/gh/gustavofsousa/ecclesia-atlas@main/data/circu
 
 # ou direto do GitHub (raw)
 curl -s https://raw.githubusercontent.com/gustavofsousa/ecclesia-atlas/main/data/circunscricoes/prelazia-de-borba.json
+
+# território de todas as circunscrições como GeoJSON (asset do release)
+curl -sL https://github.com/gustavofsousa/ecclesia-atlas/releases/download/v0.2.0/circunscricoes.geojson -o circunscricoes.geojson
 ```
 
 ```js
@@ -87,6 +90,9 @@ curl -s https://cdn.jsdelivr.net/gh/gustavofsousa/ecclesia-atlas@main/data/circu
 
 # or straight from GitHub (raw)
 curl -s https://raw.githubusercontent.com/gustavofsousa/ecclesia-atlas/main/data/circunscricoes/prelazia-de-borba.json
+
+# every circumscription's territory as GeoJSON (release asset)
+curl -sL https://github.com/gustavofsousa/ecclesia-atlas/releases/download/v0.2.0/circunscricoes.geojson -o circunscricoes.geojson
 ```
 
 ```js
