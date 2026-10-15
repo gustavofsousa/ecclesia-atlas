@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased]
+
+### Corrigido
+
+- **GeoJSON: 43 municípios sumiam, total ou parcialmente, dos polígonos.** Na malha do `tbrugz/geodata-br`, esses municípios tinham os anéis em orientação invertida, e o reparo `buffer(0)` do `build-geojson.py` apagava mais da metade da área de cada um (35 ficavam vazios) sem erro. O `circunscricoes.geojson` do `v0.2.0` e do `v0.3.0` não tem, entre outros, a cidade do Rio de Janeiro (o polígono da Arquidiocese do Rio tem área zero), Vitória, Vila Velha, Paraty, Ilhabela, Novo Airão e Presidente Figueiredo. `build-geojson.py` agora falha se o reparo apagar a área de um município.
+- **Malha municipal oficial do IBGE.** `fetch-municipios-malha.py` usa a API de malhas v3 do IBGE em vez do `tbrugz/geodata-br`. Os 7 municípios que faltavam (Santarém, Teresina, Coxim, Criciúma e Tubarão tinham um município a menos) estão no polígono, e ~100 municípios com limites antigos passam a ter o limite oficial. `dist/circunscricoes.geojson` mantém as 261 features e cai de 6,3MB para 3,6MB.
+- Os dois scripts `fetch-*` falhavam com `CERTIFICATE_VERIFY_FAILED`, porque o servidor do IBGE não envia o certificado intermediário. `tools/ibge_tls.py` soma esse intermediário às raízes do sistema, com a verificação ligada. `ibge-municipios.json` regenerado sem mudança.
+
 ## [v0.3.0] - 2026-10-02
 
 ### Adicionado
