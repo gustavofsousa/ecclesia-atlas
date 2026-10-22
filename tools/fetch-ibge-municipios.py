@@ -12,6 +12,8 @@ import json
 import urllib.request
 from pathlib import Path
 
+from ibge_tls import ibge_ssl_context
+
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "ibge-municipios.json"
 URL = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios"
@@ -26,7 +28,7 @@ def uf_sigla(m: dict) -> str:
 
 
 def main() -> int:
-    with urllib.request.urlopen(URL) as resp:
+    with urllib.request.urlopen(URL, context=ibge_ssl_context()) as resp:
         raw = resp.read()
         if resp.headers.get("Content-Encoding") == "gzip":
             raw = gzip.decompress(raw)

@@ -3,8 +3,8 @@
 
 Fase 1-B (1B.3): one Feature per circunscrição with granularidade_territorial
 == "municipio", geometry = union of its municípios' polygons from
-tools/municipios-malha.geojson (tbrugz/geodata-br, CC0 — see
-fetch-municipios-malha.py for provenance and its 7-município gap).
+tools/municipios-malha.geojson (official IBGE mesh — see
+fetch-municipios-malha.py for provenance).
 Circunscrições with granularidade_territorial in {submunicipal, indefinido,
 null} or an empty município list are skipped — they have no polygon to draw
 yet. This is a derived artifact: never hand-edit it, never treat it as a
@@ -16,6 +16,7 @@ import json
 from pathlib import Path
 
 from shapely.geometry import shape, mapping
+from shapely.geometry.base import BaseGeometry
 from shapely.ops import unary_union
 
 ROOT = Path(__file__).resolve().parent
@@ -24,12 +25,24 @@ MALHA = ROOT / "municipios-malha.geojson"
 OUT = ROOT.parent / "dist" / "circunscricoes.geojson"
 
 
+def repair(code: str, polygon: BaseGeometry) -> BaseGeometry:
+    # buffer(0) repairs minor topology defects (self-intersections, holes not
+    # cleanly assigned to a shell) in the mesh.
+    # INVARIANT: the repair keeps the area. buffer(0) empties a polygon whose
+    # rings have the wrong orientation; the old tbrugz mesh lost most of the
+    # area of 43 municípios (Rio de Janeiro among them) that way, silently.
+    repaired = polygon.buffer(0)
+    if repaired.area < 0.99 * abs(polygon.area):
+        raise ValueError(
+            f"repair of município {code} lost area: {abs(polygon.area)} -> {repaired.area}"
+        )
+    return repaired
+
+
 def main() -> int:
     malha = json.loads(MALHA.read_text(encoding="utf-8"))
     polygons_by_code = {
-        # buffer(0) repairs minor topology defects (self-intersections, holes
-        # not cleanly assigned to a shell) present in the raw simplified mesh.
-        f["properties"]["id"]: shape(f["geometry"]).buffer(0)
+        f["properties"]["id"]: repair(f["properties"]["id"], shape(f["geometry"]))
         for f in malha["features"]
     }
 
